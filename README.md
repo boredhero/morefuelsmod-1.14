@@ -1,5 +1,5 @@
 # morefuelsmod-1.14
-Early Testing! Do not use! Forge Isn't Even Stable, so why would you expect this to work?
+Super early testing. This is buggy and may not work at all. Use at your own risk.
 
 ### Contributors
 * Noah Martino (personal.boredhero@gmail.com)
