@@ -12,10 +12,14 @@ Early Testing! Do not use! Forge Isn't Even Stable, so why would you expect this
 * git command line tools OR GUI git client
 
 #### Steps:
-* cd into morefuelsmod-1.13 folder
-* run command "gradlew eclipse" or "./gradlew eclipse" (for Linux/Mac)
+* cd into morefuelsmod-1.14 folder
+* run command: "gradlew eclipse" or "./gradlew eclipse" (for Linux/Mac)
 * run command: "gradlew genEclipseRuns" or "./gradlew genEclipseRuns" (for Linux/Mac)
 * Open Eclipse, Import > Existing Gradle Project > Select Folder or run "gradlew eclipse" to generate the project.
+
+#### Building a Jar:
+* cd into morefuelsmod-1.14 folder
+* run command: "gradlew build" or "./gradlew build" (for Linux/Mac)
 
 #### Further Notes:
 * While it *IS* possible to use IntelliJ IDEA, I **strongly prefer** contributors to use Eclipse just to keep the code nice n pure since this repo has more than just the src folder.
