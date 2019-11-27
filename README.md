@@ -25,3 +25,23 @@ Early Testing! Do not use! Forge Isn't Even Stable, so why would you expect this
 * While it *IS* possible to use IntelliJ IDEA, I **strongly prefer** contributors to use Eclipse just to keep the code nice n pure since this repo has more than just the src folder.
 * You can configure the amount of RAM used for script operations/build operations in gradle.properties. Default for this repo is 4 but adjust accordingly.
 
+### Building
+
+#### Basic Instructions:
+* cd into morefuelsmod-1.14 directory
+* run command: "gradlew build" or "./gradlew build" (for Linux/Mac)
+* jar file will be in /morefuelsmod-1.14/build/libs/
+
+#### Advanced:
+* jar filename is set to modid-version.jar
+* You can change these variables in the file "build.gradle"
+	* version = 'version-number"
+		* Please use something like Semantic Versioning.
+	* group = 'com.yourname.modid'
+		* The packaging format for forge mods must be this way.
+		* Your main class file should be your modid.
+		* The last level/directory name of your package should be your modid.
+	* archivesBaseName = 'modid'
+		* This can actually be whatever you want but **should** be your modid.
+		* It will show up on the other side of the - before the version in the outputted built jar file.
+
