@@ -8,7 +8,7 @@ Early Testing! Do not use! Forge Isn't Even Stable, so why would you expect this
 
 #### Dependencies:
 * Eclipse for Java Developers
-* JDK 9 or 10 (11+ will not work with this version of Minecraft/Forge)
+* JDK 8 (preferred), 9, or 10 (11+ will not work with this version of Minecraft/Forge)
 * git command line tools OR GUI git client
 
 #### Steps:
