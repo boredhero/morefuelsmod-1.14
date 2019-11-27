@@ -9,6 +9,7 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 #### Dependencies:
 * Eclipse for Java Developers
 * JDK 8 (preferred), 9, or 10 (11+ will not work with this version of Minecraft/Forge)
+	* Linux users of the world, yes, OpenJDK is just fine. 
 * git command line tools OR GUI git client
 
 #### Steps:
