@@ -4,7 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -39,7 +38,9 @@ public class MoreFuelsMod {
     private void setup(final FMLCommonSetupEvent event)
     {
         LOGGER.info("Loading morefuelsmod-" + mcversion + " " + version);
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        LOGGER.info("morefuelsmod: Lets Load some F*****G ores");
+        MFMOreGen.setupOreGenPart1();
+        LOGGER.info("F*****G ores loaded");
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
