@@ -21,6 +21,7 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 * git command line tools OR GUI git client
 
 #### Steps:
+* run command: "git clone https://github.com/boredhero/morefuelsmod-1.14"
 * cd into morefuelsmod-1.14 folder
 * run command: "gradlew eclipse" or "./gradlew eclipse" (for Linux/Mac)
 * run command: "gradlew genEclipseRuns" or "./gradlew genEclipseRuns" (for Linux/Mac)
