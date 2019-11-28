@@ -24,7 +24,8 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 * cd into morefuelsmod-1.14 folder
 * run command: "gradlew eclipse" or "./gradlew eclipse" (for Linux/Mac)
 * run command: "gradlew genEclipseRuns" or "./gradlew genEclipseRuns" (for Linux/Mac)
-* Open Eclipse, Import > Existing Gradle Project > Select Folder or run "gradlew eclipse" to generate the project.
+* Open Eclipse, File > Import > Existing Project > Select Folder > Import
+* Un-collapse the imported project and make sure there are no errors and that there is a "Referenced Libraries" item.
 
 #### Building a Jar:
 * cd into morefuelsmod-1.14 folder
