@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package morefuelsmod.boredhero.morefuelsmod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -19,13 +19,16 @@ import org.apache.logging.log4j.Logger;
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("examplemod")
-public class ExampleMod
-{
+@Mod("morefuelsmod")
+public class MoreFuelsMod {
+
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
+    //This isn't really correct but I'm not sure how exactly we do this with 1.14 so until i find out more i'll use this when printing to the terminal during init stages.
+    String internalVersioning = "0.0.1";
+    String mcVersion = "1.14.4";
 
-    public ExampleMod() {
+    public MoreFuelsMod() {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -42,7 +45,7 @@ public class ExampleMod
     private void setup(final FMLCommonSetupEvent event)
     {
         // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
+        LOGGER.info("Loading morefuelsmod-" + mcVersion + " " + internalVersioning);
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 

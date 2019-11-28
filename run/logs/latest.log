@@ -1,0 +1,61 @@
+[27Nov2019 19:16:19.799] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20190829.143755, --fml.mcVersion, 1.14.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 28.1.96, --version, MOD_DEV, --assetIndex, 1.14, --assetsDir, /home/noah/.gradle/caches/forge_gradle/assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[27Nov2019 19:16:19.809] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 4.1.0+62+5bfa59b starting: java version 1.8.0_232 by Oracle Corporation
+[27Nov2019 19:16:20.254] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[27Nov2019 19:16:22.616] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, /home/noah/.gradle/caches/forge_gradle/assets, --assetIndex, 1.14, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[27Nov2019 19:16:27.752] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[27Nov2019 19:16:56.529] [Client thread/INFO] [net.minecraft.client.Minecraft/]: LWJGL Version: 3.2.2 build 10
+[27Nov2019 19:16:59.406] [modloading-worker-1/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 28.1.96, for MC 1.14.4 with MCP 20190829.143755
+[27Nov2019 19:16:59.407] [modloading-worker-1/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v28.1.96 Initialized
+[27Nov2019 19:16:59.807] [Client thread/INFO] [morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod/]: HELLO from Register Block
+[27Nov2019 19:17:06.256] [Client thread/WARN] [com.mojang.text2speech.NarratorLinux/]: ERROR : Couldn't load Narrator library : Unable to load library 'fliteWrapper': Can't obtain InputStream for linux-x86-64/libfliteWrapper.so
+[27Nov2019 19:17:06.419] [Server-Worker-7/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file /home/noah/Coding/morefuelsmod-1.14/run/config/forge-client.toml is not correct. Correcting
+[27Nov2019 19:17:06.421] [Server-Worker-7/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client was corrected from null to SimpleCommentedConfig:{}
+[27Nov2019 19:17:06.421] [Server-Worker-7/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.zoomInMissingModelTextInGui was corrected from null to false
+[27Nov2019 19:17:06.422] [Server-Worker-7/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.forgeCloudsEnabled was corrected from null to true
+[27Nov2019 19:17:06.423] [Server-Worker-7/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.disableStairSlabCulling was corrected from null to false
+[27Nov2019 19:17:06.423] [Server-Worker-7/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.alwaysSetupTerrainOffThread was corrected from null to false
+[27Nov2019 19:17:06.423] [Server-Worker-7/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.forgeLightPipelineEnabled was corrected from null to true
+[27Nov2019 19:17:06.424] [Server-Worker-7/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.selectiveResourceReloadEnabled was corrected from null to true
+[27Nov2019 19:17:06.424] [Server-Worker-7/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.showLoadWarnings was corrected from null to true
+[27Nov2019 19:17:06.424] [Server-Worker-7/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.allowEmissiveItems was corrected from null to true
+[27Nov2019 19:17:06.426] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
+[27Nov2019 19:17:06.426] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
+[27Nov2019 19:17:06.427] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
+[27Nov2019 19:17:06.427] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
+[27Nov2019 19:17:06.431] [modloading-worker-4/INFO] [morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod/]: Loading morefuelsmod-1.14.4 0.0.1
+[27Nov2019 19:17:06.431] [modloading-worker-4/INFO] [morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod/]: DIRT BLOCK >> minecraft:dirt
+[27Nov2019 19:17:07.148] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[27Nov2019 19:17:07.148] [modloading-worker-3/INFO] [morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod/]: Got game settings net.minecraft.client.GameSettings@4d5aea6d
+[27Nov2019 19:17:08.253] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 28.1.96 Target: null
+[27Nov2019 19:17:08.253] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [morefuelsmod] Starting version check at http://myurl.me/
+[27Nov2019 19:17:08.637] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.io.IOException: Server returned HTTP response code: 400 for URL: http://myurl.me/
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_232]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_232]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_232]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_232]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[?:1.8.0_232]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[?:1.8.0_232]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_232]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[?:1.8.0_232]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[?:1.8.0_232]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[?:1.8.0_232]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:189) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:206) ~[?:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:1.8.0_232]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:157) [?:?]
+Caused by: java.io.IOException: Server returned HTTP response code: 400 for URL: http://myurl.me/
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[?:1.8.0_232]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[?:1.8.0_232]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[?:1.8.0_232]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:173) ~[?:?]
+	... 3 more
+[27Nov2019 19:17:12.929] [modloading-worker-4/INFO] [morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod/]: Got IMC []
+[27Nov2019 19:17:14.908] [Client thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[27Nov2019 19:17:14.910] [Client thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[27Nov2019 19:17:15.284] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512 textures-atlas
+[27Nov2019 19:17:16.724] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/particle-atlas
+[27Nov2019 19:17:16.735] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/painting-atlas
+[27Nov2019 19:17:16.738] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128 textures/mob_effect-atlas
+[27Nov2019 19:17:17.157] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[27Nov2019 19:26:45.603] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
