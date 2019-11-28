@@ -10,7 +10,7 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 * The Mojang Folks
 
 ### License
-* [Don't Be a Dick Public License v1.1](http://dbad-license.org/)  
+* [Don't Be a Dick Public License v1.1](https://github.com/boredhero/morefuelsmod-1.14/blob/master/LICENSE.md)  
 
 ### Basic Setup Instructions
 
