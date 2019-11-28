@@ -67,6 +67,8 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 * Do an assessment of what fuel tweaks are necessary in 1.14.4 before implemeneting them
 * Implement fuel tweaks as per assessment
 * Implement block/item crafting recipies and fuel timings
+* Investigate server crashing on startup. Proxy necessary? Sided annotations?
 * Do some polishing work on the mods.toml file
 * Make a stripped down version and release as More Fuels Mod Light
+	* Try to do this as a branch on this GitHub repo for better organization going forward.
 * Adjust versioning number to 1.6.3 before final build
