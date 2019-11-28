@@ -1,3 +1,4 @@
+#![mf-logo](https://raw.githubusercontent.com/boredhero/morefuelsmod-1.14/master/src/main/resources/mf-logo.png)
 # morefuelsmod-1.14
 Super early testing. This is buggy and may not work at all. Use at your own risk.
 
