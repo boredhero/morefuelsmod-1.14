@@ -53,11 +53,12 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 
 ## TODO:
 
-* Set textures/models for blocks.
+* Set textures/models for blocks
 * Figure out how to get the ore blocks to drop specific items rather than their own ItemBlocks
-* Do an assessment of what fuel tweaks are necessary in 1.14.4 before implemeneting them.
-* Implement fuel tweaks as per assessment.
-* Implement block/item crafting recipies and fuel timings.
+* Figure out how to do ore generation
+* Do an assessment of what fuel tweaks are necessary in 1.14.4 before implemeneting them
+* Implement fuel tweaks as per assessment
+* Implement block/item crafting recipies and fuel timings
 * Do some polishing work on the mods.toml file
 * Make a stripped down version and release as More Fuels Mod Light
-* Adjust versioning number to 1.6.3 before final build.
+* Adjust versioning number to 1.6.3 before final build
