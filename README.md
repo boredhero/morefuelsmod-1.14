@@ -10,7 +10,7 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 * The Mojang Folks
 
 ### License
-* [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
+* [Don't Be a Dick Public License v1.1](http://dbad-license.org/)  
 
 ### Basic Setup Instructions
 
