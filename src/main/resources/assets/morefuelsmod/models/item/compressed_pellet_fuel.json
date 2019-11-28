@@ -1,0 +1,7 @@
+{
+        "parent": "item/generated",
+        "textures": {
+                "layer0": "morefuelsmod:item/compressed_pellet_fuel"
+        }
+}
+

@@ -46,3 +46,18 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 		* This can actually be whatever you want but **should** be your modid.
 		* It will show up on the other side of the - before the version in the outputted built jar file.
 
+### Test in Game without building
+* Make sure you edit the launch files to make sure any reference to "examplemod" is replaced with your modid
+* You can run this from Eclipse if you want, but I've had issues with this working on 1.14
+* The easiest way is to run command: "gradlew runClient"/"gradlew runServer" or "./gradlew runClient"/"./gradlew runServer" (for Linux/Mac)
+
+## TODO:
+
+* Set textures/models for blocks.
+* Figure out how to get the ore blocks to drop specific items rather than their own ItemBlocks
+* Do an assessment of what fuel tweaks are necessary in 1.14.4 before implemeneting them.
+* Implement fuel tweaks as per assessment.
+* Implement block/item crafting recipies and fuel timings.
+* Do some polishing work on the mods.toml file
+* Make a stripped down version and release as More Fuels Mod Light
+* Adjust versioning number to 1.6.3 before final build.
