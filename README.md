@@ -4,6 +4,14 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 ### Contributors
 * Noah Martino (personal.boredhero@gmail.com)
 
+### Credits
+* [Cadiboo's Modding Tutorial](https://cadiboo.github.io/tutorials/1.14.4/forge/) + [Example GitHub Repo](https://github.com/Cadiboo/Example-Mod)
+* The Forge Folks
+* The Mojang Folks
+
+### License
+* [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0-standalone.html)  
+
 ### Basic Setup Instructions
 
 #### Dependencies:
