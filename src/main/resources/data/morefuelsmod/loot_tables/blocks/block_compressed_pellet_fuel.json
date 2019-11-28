@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "block_compressed_pellet_fuel",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "morefuelsmod:block_compressed_pellet_fuel"
+        }
+      ]
+    }
+  ]
+}
+

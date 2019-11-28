@@ -1,0 +1,8 @@
+{
+        "variants": {
+                "": [
+                        { "model": "morefuelsmod:block/block_creative_infinite_fuel" }
+                ]
+        }
+}
+

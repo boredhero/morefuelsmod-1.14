@@ -1,7 +1,108 @@
-[28Nov2019 01:45:45.725] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevserver, --fml.mcpVersion, 20190829.143755, --fml.mcVersion, 1.14.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 28.1.96]
-[28Nov2019 01:45:45.733] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 4.1.0+62+5bfa59b starting: java version 1.8.0_232 by Oracle Corporation
-[28Nov2019 01:45:46.151] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
-[28Nov2019 01:45:48.166] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevserver' with arguments [--gameDir, .]
-[28Nov2019 01:45:50.349] [main/ERROR] [net.minecraft.server.dedicated.PropertyManager/]: Failed to load properties from file: server.properties
-[28Nov2019 01:45:51.737] [main/WARN] [net.minecraft.server.ServerEula/]: Failed to load eula.txt
-[28Nov2019 01:45:51.741] [main/INFO] [net.minecraft.server.MinecraftServer/]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
+[28Nov2019 13:53:11.793] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20190829.143755, --fml.mcVersion, 1.14.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 28.1.96, --version, MOD_DEV, --assetIndex, 1.14, --assetsDir, /home/noah/.gradle/caches/forge_gradle/assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[28Nov2019 13:53:11.801] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 4.1.0+62+5bfa59b starting: java version 1.8.0_232 by Oracle Corporation
+[28Nov2019 13:53:12.104] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[28Nov2019 13:53:13.854] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, /home/noah/.gradle/caches/forge_gradle/assets, --assetIndex, 1.14, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[28Nov2019 13:53:20.630] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[28Nov2019 13:53:46.629] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
+[28Nov2019 13:53:46.755] [Client thread/INFO] [net.minecraft.client.Minecraft/]: LWJGL Version: 3.2.2 build 10
+[28Nov2019 13:53:49.826] [modloading-worker-1/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 28.1.96, for MC 1.14.4 with MCP 20190829.143755
+[28Nov2019 13:53:49.831] [modloading-worker-1/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v28.1.96 Initialized
+[28Nov2019 13:53:50.874] [Client thread/INFO] [morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod/]: HELLO from Register Block
+[28Nov2019 13:53:57.141] [Client thread/WARN] [com.mojang.text2speech.NarratorLinux/]: ERROR : Couldn't load Narrator library : Unable to load library 'fliteWrapper': Can't obtain InputStream for linux-x86-64/libfliteWrapper.so
+[28Nov2019 13:53:57.320] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
+[28Nov2019 13:53:57.322] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
+[28Nov2019 13:53:57.324] [modloading-worker-3/INFO] [morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod/]: Loading morefuelsmod-1.14.4 0.0.1
+[28Nov2019 13:53:57.324] [modloading-worker-3/INFO] [morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod/]: DIRT BLOCK >> minecraft:dirt
+[28Nov2019 13:53:57.939] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[28Nov2019 13:53:57.941] [modloading-worker-2/INFO] [morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod/]: Got game settings net.minecraft.client.GameSettings@477505ba
+[28Nov2019 13:53:58.897] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 28.1.96 Target: null
+[28Nov2019 13:54:04.277] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
+[28Nov2019 13:54:04.433] [Client thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[28Nov2019 13:54:04.437] [Client thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[28Nov2019 13:54:04.728] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512 textures-atlas
+[28Nov2019 13:54:05.934] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/particle-atlas
+[28Nov2019 13:54:05.946] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/painting-atlas
+[28Nov2019 13:54:05.948] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128 textures/mob_effect-atlas
+[28Nov2019 13:54:06.371] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[28Nov2019 13:54:12.313] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[28Nov2019 13:54:12.314] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[28Nov2019 13:54:12.315] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[28Nov2019 13:54:12.318] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[28Nov2019 13:54:12.321] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[28Nov2019 13:54:12.750] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.14.4
+[28Nov2019 13:54:12.750] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Generating keypair
+[28Nov2019 13:54:12.920] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
+[28Nov2019 13:54:12.921] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
+[28Nov2019 13:54:13.064] [Server thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this SERVER instance
+[28Nov2019 13:54:13.198] [Server thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry Block: Found a missing id from the world morefuelsmod:test_block
+[28Nov2019 13:54:13.672] [Server thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, forge-1.14.4-28.1.96_mapped_snapshot_20190719-1.14.3-recomp.jar, main
+[28Nov2019 13:54:14.787] [Server thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 6 recipes
+[28Nov2019 13:54:16.660] [Server thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 811 advancements
+[28Nov2019 13:54:17.356] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[28Nov2019 13:54:18.917] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[28Nov2019 13:54:18.918] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[28Nov2019 13:54:18.918] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[28Nov2019 13:54:18.918] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[28Nov2019 13:54:19.464] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 13%
+[28Nov2019 13:54:20.256] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 93%
+[28Nov2019 13:54:20.509] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 93%
+[28Nov2019 13:54:20.899] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 94%
+[28Nov2019 13:54:21.416] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 95%
+[28Nov2019 13:54:21.914] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 97%
+[28Nov2019 13:54:22.060] [Server thread/INFO] [morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod/]: Server instance detected. Ditching the clientside.
+[28Nov2019 13:54:22.220] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 4846 ms
+[28Nov2019 13:54:22.742] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[28Nov2019 13:54:22.745] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[28Nov2019 13:54:25.032] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[28Nov2019 13:54:25.546] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:2c2aac67] logged in with entity id 166 at (-169.04727089564696, 4.0, -206.60806376943836)
+[28Nov2019 13:54:25.607] [Client thread/ERROR] [net.minecraftforge.fml.network.simple.IndexedMessageCodec/SIMPLENET]: Received empty payload on channel fml:handshake
+[28Nov2019 13:54:25.634] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[28Nov2019 13:54:26.296] [Server thread/ERROR] [net.minecraftforge.fml.network.simple.IndexedMessageCodec/SIMPLENET]: Received empty payload on channel fml:handshake
+[28Nov2019 13:54:26.304] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[28Nov2019 13:54:26.317] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'test'/minecraft:overworld
+[28Nov2019 13:54:26.722] [Client thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 35 advancements
+[28Nov2019 13:54:27.307] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2160ms or 43 ticks behind
+[28Nov2019 13:54:27.649] [pool-3-thread-1/WARN] [com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService/]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@5fb283f3[id=380df991-f603-344c-a090-369bad2a924a,name=Dev,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[authlib-1.5.25.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) ~[authlib-1.5.25.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) ~[authlib-1.5.25.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) ~[authlib-1.5.25.jar:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) ~[guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) ~[guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) ~[guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) ~[guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) ~[guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) ~[guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) ~[guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) ~[guava-21.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) ~[authlib-1.5.25.jar:?]
+	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:1953) ~[?:?]
+	at net.minecraft.client.resources.SkinManager.lambda$loadProfileTextures$1(SkinManager.java:111) ~[?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_232]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_232]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_232]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_232]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_232]
+[28Nov2019 13:54:32.975] [Client thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Incorrect argument for command
+[28Nov2019 13:54:32.980] [Client thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] /gamemode 1<--[HERE]
+[28Nov2019 13:54:36.470] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[28Nov2019 13:54:36.491] [Client thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Creative Mode
+[28Nov2019 13:55:12.663] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[28Nov2019 13:55:12.673] [Client thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Survival Mode
+[28Nov2019 13:55:37.447] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[28Nov2019 13:55:37.498] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'test'/minecraft:overworld
+[28Nov2019 13:55:41.072] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[28Nov2019 13:55:41.084] [Client thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Creative Mode
+[28Nov2019 13:55:47.947] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[28Nov2019 13:55:47.955] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'test'/minecraft:overworld
+[28Nov2019 13:55:48.411] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
+[28Nov2019 13:55:48.413] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[28Nov2019 13:55:48.423] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[28Nov2019 13:55:48.535] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[28Nov2019 13:55:48.535] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[28Nov2019 13:55:48.536] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[28Nov2019 13:55:48.536] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'test'/minecraft:overworld
+[28Nov2019 13:55:48.699] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (test): All chunks are saved
+[28Nov2019 13:55:48.722] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (test): All chunks are saved
+[28Nov2019 13:55:49.731] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

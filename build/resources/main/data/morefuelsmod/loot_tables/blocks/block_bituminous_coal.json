@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "block_bituminous_coal",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "morefuelsmod:block_bituminous_coal"
+        }
+      ]
+    }
+  ]
+}
+

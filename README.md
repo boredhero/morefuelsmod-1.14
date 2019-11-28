@@ -63,8 +63,6 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 
 ## TODO:
 
-* Set textures/models for blocks
-* Figure out how to get the ore blocks to drop specific items rather than their own ItemBlocks
 * Figure out how to do ore generation
 * Do an assessment of what fuel tweaks are necessary in 1.14.4 before implemeneting them
 * Implement fuel tweaks as per assessment
