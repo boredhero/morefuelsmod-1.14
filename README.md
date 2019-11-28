@@ -27,17 +27,13 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 * run command: "gradlew eclipse" or "./gradlew eclipse" (for Linux/Mac)
 * run command: "gradlew genEclipseRuns" or "./gradlew genEclipseRuns" (for Linux/Mac)
 * Open Eclipse, File > Import > Existing Project > Select Folder > Import
-* Un-collapse the imported project and make sure there are no errors and that there is a "Referenced Libraries" item.
-
-#### Building a Jar:
-* cd into morefuelsmod-1.14 folder
-* run command: "gradlew build" or "./gradlew build" (for Linux/Mac)
+* Un-collapse the imported project and make sure there are no errors and that there is a "Referenced Libraries" item
 
 #### Further Notes:
 * While it *IS* possible to use IntelliJ IDEA, I **strongly prefer** contributors to use Eclipse just to keep the code nice n pure since this repo has more than just the src folder.
 * You can configure the amount of RAM used for script operations/build operations in gradle.properties. Default for this repo is 4 but adjust accordingly.
 
-### Building
+### Building a Jar
 
 #### Basic Instructions:
 * cd into morefuelsmod-1.14 directory
@@ -74,4 +70,5 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 * Do some polishing work on the mods.toml file
 * Make a stripped down version and release as More Fuels Mod Light
 	* Try to do this as a branch on this GitHub repo for better organization going forward
+* Adjust build.gradle to include a sources jar in the build folder when building.
 * Adjust versioning number to 1.6.3 before final build
