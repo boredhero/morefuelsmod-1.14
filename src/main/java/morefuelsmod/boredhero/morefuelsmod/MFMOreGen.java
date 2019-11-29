@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biome.Category;
+import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
@@ -29,7 +30,8 @@ public class MFMOreGen {
 	//These are switches for a config to eventually change. For now, they are always set to true.
     //Ex: final static boolean enableBlockNameGeneration = true;
     final static boolean enableBituminousGeneration = true;
-    final static boolean enableLavaOreGeneration = true;
+    final static boolean enableLavaOreNetherGeneration = true;
+    final static boolean enableLavaOreOverworldGeneration = true;
     
     //These are vein sizes
     //Ex: private static final int blockNameVeinSize = a positive integer for the number of blocks in the vein
@@ -41,11 +43,12 @@ public class MFMOreGen {
     //As far as I can tell, MaxHeightBase should always be 0 in most if not all ore generation cases.
     private static final CountRangeConfig bituminousCfg = new CountRangeConfig(30, 1, 0, 128);
     private static final CountRangeConfig lavaOreCfg = new CountRangeConfig(30, 1, 0, 128);
+    private static final CountRangeConfig lavaOreOverworldCfg = new CountRangeConfig(18, 1, 0, 30);
 
     //These are static Category arrays of Biome.Category.BIOMETYPE to pass into setupOreGenPart2 to do its thing.
     //This is an experimental thing on my part.
-    static Category[] lavaOreBiomes = {Biome.Category.NETHER};
-    static Category[] bituminousBiomes = {};
+    static Category[] allOverworldBiomes = {};
+    static Category[] netherBiome = {Biome.Category.NETHER};
     
     //The first part of my redesigned OreGen class. This just calls another method that does all the work and feeds it what it needs.
     public static void setupOreGenPart1() {
@@ -55,8 +58,9 @@ public class MFMOreGen {
     	//A boolean that you can check with your config, or just hard code send it a false to avoid that step
     	//A vein size integer
     	//A CountRangeConfig object with the Veins Per Chunk, MinHeight, MaxHeightBase (should be 0), and MaxHeight
-    	setupOreGenPart2(lavaOreBiomes, nether, MFMBlocks.BLOCK_LAVA_ORE, enableLavaOreGeneration, lavaOreVeinSize, lavaOreCfg);
-    	setupOreGenPart2(bituminousBiomes, stone, MFMBlocks.BLOCK_BITUMINOUS_COAL_ORE, enableBituminousGeneration, bituminousVeinSize, bituminousCfg);
+    	setupOreGenPart2(netherBiome, nether, MFMBlocks.BLOCK_LAVA_ORE, enableLavaOreNetherGeneration, lavaOreVeinSize, lavaOreCfg);
+    	setupOreGenPart2(allOverworldBiomes, stone, MFMBlocks.BLOCK_BITUMINOUS_COAL_ORE, enableBituminousGeneration, bituminousVeinSize, bituminousCfg);
+    	setupOreGenPart2(allOverworldBiomes, stone, MFMBlocks.BLOCK_LAVA_ORE, enableLavaOreOverworldGeneration, lavaOreVeinSize, lavaOreOverworldCfg);
     }
     
     //This baby does all the hard work.
