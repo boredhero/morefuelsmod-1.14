@@ -1,6 +1,6 @@
 package morefuelsmod.boredhero.morefuelsmod.config;
 
-
+//Credit to Cadiboo on config file
 
 import org.apache.commons.lang3.tuple.Pair;
 
