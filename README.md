@@ -60,15 +60,12 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 
 ## TODO:
 
-* Figure out how to do ore generation
 * Do an assessment of what fuel tweaks are necessary in 1.14.4 before implemeneting them
 * Implement fuel tweaks as per assessment
 * Implement block/item crafting recipies and fuel timings
 * Investigate support Forge 1.14.2 and 1.14.3 with one jar
 	* This may be a little more complicated because of the mods.toml format. Not sure if it'll allow but should try
 * Investigate server crashing on startup. Proxy necessary? Sided annotations?
-* Do some polishing work on the mods.toml file
 * Make a stripped down version and release as More Fuels Mod Light
 	* Try to do this as a branch on this GitHub repo for better organization going forward
-* Adjust build.gradle to include a sources jar in the build folder when building.
-* Adjust versioning number to 1.6.3 before final build
+* Adjust build.gradle to include a sources jar in the build folder when building

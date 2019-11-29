@@ -24,7 +24,7 @@ public class MoreFuelsMod {
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
     //This isn't really correct but I'm not sure how exactly we do this with 1.14 so until i find out more i'll use this when printing to the terminal during init stages.
-    public static final String version = "0.0.1";
+    public static final String version = "1.6.3";
     public static final String mcversion = "1.14.4";
     public static final String modid = "morefuelsmod";
 
