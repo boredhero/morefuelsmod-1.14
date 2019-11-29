@@ -5,3 +5,5 @@
 /run/
 /run/*
 *.launch
+*.project
+*.classpath
