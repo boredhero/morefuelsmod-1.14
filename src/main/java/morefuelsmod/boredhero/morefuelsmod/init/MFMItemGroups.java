@@ -11,7 +11,7 @@ import morefuelsmod.boredhero.morefuelsmod.*;
 
 public class MFMItemGroups {
 	
-	public static final ItemGroup MFM_ITEM_GROUP = new ModItemGroup(MoreFuelsMod.modid, () -> new ItemStack(MFMItems.coke));
+	public static final ItemGroup MFM_ITEM_GROUP = new ModItemGroup(MoreFuelsMod.modid, () -> new ItemStack(MFMItems.COKE));
 	
 	public static class ModItemGroup extends ItemGroup {
 		

@@ -3,7 +3,7 @@ Implementation-Title: morefuelsmod-1.14
 Implementation-Version: 0.0.1
 Specification-Vendor: examplemodsareus
 Specification-Title: morefuelsmod
-Implementation-Timestamp: 2019-11-28T19:33:47-0500
+Implementation-Timestamp: 2019-11-28T19:56:03-0500
 Specification-Version: 1
 Implementation-Vendor: examplemodsareus
 

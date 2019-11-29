@@ -3,7 +3,6 @@ package morefuelsmod.boredhero.morefuelsmod;
 import org.apache.commons.lang3.ArrayUtils;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biome.Category;
@@ -14,7 +13,6 @@ import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.registries.ForgeRegistries;
 
-import morefuelsmod.boredhero.morefuelsmod.init.MFMBlockStates;
 import morefuelsmod.boredhero.morefuelsmod.init.MFMBlocks;
 
 /*
@@ -24,25 +22,38 @@ import morefuelsmod.boredhero.morefuelsmod.init.MFMBlocks;
 
 public class MFMOreGen {
     
-    //These are switches for a config to eventually change. For now, they are always set to true.
+    
+	//Space savers when calling setupOreGenPart2();
+	private static final OreFeatureConfig.FillerBlockType stone = OreFeatureConfig.FillerBlockType.NATURAL_STONE;
+	private static final OreFeatureConfig.FillerBlockType nether = OreFeatureConfig.FillerBlockType.NETHERRACK;
+	//These are switches for a config to eventually change. For now, they are always set to true.
     //Ex: final static boolean enableBlockNameGeneration = true;
     final static boolean enableBituminousGeneration = true;
     final static boolean enableLavaOreGeneration = true;
+    //Test to validate this class's functionality
+    final static boolean enableWeirdDiamondBlocks = true;
     
     //These are vein sizes
     //Ex: private static final int blockNameVeinSize = a positive integer for the number of blocks in the vein
     private static final int bituminousVeinSize = 5;
     private static final int lavaOreVeinSize = 3;
+    //Test to validate this class's functionality
+    private static final int weirdDiamondBlocksVeinSize = 5;
     
     //CountRangeConfig(Veins Per Chunk Count, MinHeight, MaxHeightBase, MaxHeight)
     //Ex: private static final CountRangeConfig blockNameCfg = new CountRangeConfig(Veins Per Chunk Count, MinHeight, MaxHeightBase, MaxHeight);
     //As far as I can tell, MaxHeightBase should always be 0 in most if not all ore generation cases.
     private static final CountRangeConfig bituminousCfg = new CountRangeConfig(30, 1, 0, 128);
     private static final CountRangeConfig lavaOreCfg = new CountRangeConfig(30, 1, 0, 128);
+    //Test to validate this class's functionality
+    private static final CountRangeConfig weirdDiamondBlocksCfg = new CountRangeConfig(30, 1, 0, 128);
     //These are static Category arrays of Biome.Category.BIOMETYPE to pass into setupOreGenPart2 to do its thing.
     //This is an experimental thing on my part.
     static Category[] lavaOreBiomes = {Biome.Category.NETHER};
     static Category[] bituminousBiomes = {};
+    //Test to validate this class's functionality
+    static Category[] weirdDiamondBlocks = {};
+    static Category[] weirdDiamondBlocksInNether = {Biome.Category.NETHER};
     
     //The first part of my redesigned OreGen class. This just calls another method that does all the work and feeds it what it needs.
     public static void setupOreGenPart1() {
@@ -52,8 +63,11 @@ public class MFMOreGen {
     	//A boolean that you can check with your config, or just hard code send it a false to avoid that step
     	//A vein size integer
     	//A CountRangeConfig object with the Veins Per Chunk, MinHeight, MaxHeightBase (should be 0), and MaxHeight
-    	setupOreGenPart2(lavaOreBiomes, OreFeatureConfig.FillerBlockType.NETHERRACK, MFMBlocks.block_lava_ore, enableLavaOreGeneration, lavaOreVeinSize, lavaOreCfg);
-    	setupOreGenPart2(bituminousBiomes, OreFeatureConfig.FillerBlockType.NATURAL_STONE, MFMBlocks.block_bituminous_coal_ore, enableBituminousGeneration, bituminousVeinSize, bituminousCfg);
+    	setupOreGenPart2(lavaOreBiomes, nether, MFMBlocks.BLOCK_LAVA_ORE, enableLavaOreGeneration, lavaOreVeinSize, lavaOreCfg);
+    	setupOreGenPart2(bituminousBiomes, stone, MFMBlocks.BLOCK_BITUMINOUS_COAL_ORE, enableBituminousGeneration, bituminousVeinSize, bituminousCfg);
+    	//Test to validate this class's functionality
+    	setupOreGenPart2(weirdDiamondBlocks, stone, Blocks.DIAMOND_BLOCK, enableWeirdDiamondBlocks, weirdDiamondBlocksVeinSize, weirdDiamondBlocksCfg);
+    	setupOreGenPart2(weirdDiamondBlocksInNether, nether, Blocks.DIAMOND_BLOCK, enableWeirdDiamondBlocks, weirdDiamondBlocksVeinSize, weirdDiamondBlocksCfg);
     }
     
     //This baby does all the hard work.
@@ -102,41 +116,4 @@ public class MFMOreGen {
     }//End else if
     }//End setup oreGenPart2
 	
- //NOTE/TODO: IF THE AVOVE METHOD FAILS, FALLBACK TO THIS COMMENTED CODE!   
- /*
-    public static void setupOreGen()
-    {
-    	for (Biome biome: ForgeRegistries.BIOMES.getValues())
-        {
-            // we have no End or Nether ores, so skip those.
-            if (  biome.getCategory() == Biome.Category.THEEND || biome.getCategory() == Biome.Category.NETHER)
-            {
-                continue;
-            }
-            
-            // Overworld-type Ore generation
-            
-            
-            
-            if (enableBituminousGeneration)
-            {
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, MFMBlockStates.BLOCK_BITUMINOUS_COAL_ORE, bituminousVeinSize),Placement.COUNT_RANGE, bituminousCfg));
-        	} // end if copper_ore
-		} // end for biomes
-    	
-    	
-    	 This is sloppy, probably, but I want to make sure the LavaOre only generates in the nether. Should be looked over and condensed back into one for loop later...
-    	 
-    	for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-    		//ignore OVERWORLD and THEEND
-    		if(biome.getCategory() != Biome.Category.NETHER)
-    			continue;
-    		
-    		if(enableLavaOreGeneration) {
-    			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NETHERRACK,  MFMBlockStates.BLOCK_LAVA_ORE, lavaOreVeinSize),Placement.COUNT_RANGE, lavaOreCfg);
-    		}
-    		
-    	}
-	} // end setupOreGen() */
-    
 } // END OF MFMOREGEN.JAVA
