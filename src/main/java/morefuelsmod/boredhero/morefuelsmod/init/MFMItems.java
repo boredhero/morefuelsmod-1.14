@@ -13,14 +13,14 @@ import net.minecraftforge.registries.ObjectHolder;
 @ObjectHolder(MoreFuelsMod.modid)
 public class MFMItems {
 
-	public static final Item COKE = MFMUtil._null();
-	public static final Item BITUMINOUS_COAL = MFMUtil._null();
-	public static final Item CAN_OF_SLIMOLINE = MFMUtil._null();
-	public static final Item COAL_DUST = MFMUtil._null();
-	public static final Item COMPRESSED_PELLET_FUEL = MFMUtil._null();
-	public static final Item GLASS_ORB = MFMUtil._null();
-	public static final Item LAVA_CRYSTALS = MFMUtil._null();
-	public static final Item LAVA_GLASS_ORB = MFMUtil._null();
-	public static final Item PELLET_FUEL = MFMUtil._null();
-	public static final Item TEMPERED_GLASS_ORB = MFMUtil._null();
+	public static final Item coke = MFMUtil._null();
+	public static final Item bituminous_coal = MFMUtil._null();
+	public static final Item can_of_slimoline = MFMUtil._null();
+	public static final Item coal_dust = MFMUtil._null();
+	public static final Item compressed_pellet_fuel = MFMUtil._null();
+	public static final Item glass_orb = MFMUtil._null();
+	public static final Item lava_crystals = MFMUtil._null();
+	public static final Item lava_glass_orb = MFMUtil._null();
+	public static final Item pellet_fuel = MFMUtil._null();
+	public static final Item tempered_glass_orb = MFMUtil._null();
 }

@@ -2,6 +2,7 @@ package morefuelsmod.boredhero.morefuelsmod.init;
 
 import morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraftforge.registries.ObjectHolder;
 
 //The purpose of this class is to allow us to reference our BlockStates before they are actually created.
@@ -14,6 +15,6 @@ import net.minecraftforge.registries.ObjectHolder;
 public class MFMBlockStates {
 	//These are experimental. I don't know the consequences, really, they're only here so the OreGen class can work.
 	//Hope they don't break anything else.
-	public static BlockState BLOCK_BITUMINOUS_COAL_ORE = MFMUtil._null();
-	public static BlockState BLOCK_LAVA_ORE = MFMUtil._null();
+	public static BlockState block_bituminous_coal_ore = MFMUtil._null();
+	public static BlockState block_lava_ore = MFMUtil._null();
 }

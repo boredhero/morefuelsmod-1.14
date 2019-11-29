@@ -2,7 +2,9 @@ package morefuelsmod.boredhero.morefuelsmod;
 
 import org.apache.commons.lang3.ArrayUtils;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biome.Category;
 import net.minecraft.world.gen.GenerationStage;
@@ -13,6 +15,7 @@ import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import morefuelsmod.boredhero.morefuelsmod.init.MFMBlockStates;
+import morefuelsmod.boredhero.morefuelsmod.init.MFMBlocks;
 
 /*
  * Base class that I heavily *heavily* modified was based from here:
@@ -34,8 +37,8 @@ public class MFMOreGen {
     //CountRangeConfig(Veins Per Chunk Count, MinHeight, MaxHeightBase, MaxHeight)
     //Ex: private static final CountRangeConfig blockNameCfg = new CountRangeConfig(Veins Per Chunk Count, MinHeight, MaxHeightBase, MaxHeight);
     //As far as I can tell, MaxHeightBase should always be 0 in most if not all ore generation cases.
-    private static final CountRangeConfig bituminousCfg = new CountRangeConfig(16, 40, 0, 128);
-    private static final CountRangeConfig lavaOreCfg = new CountRangeConfig(13, 1, 0, 128);
+    private static final CountRangeConfig bituminousCfg = new CountRangeConfig(30, 1, 0, 128);
+    private static final CountRangeConfig lavaOreCfg = new CountRangeConfig(30, 1, 0, 128);
     //These are static Category arrays of Biome.Category.BIOMETYPE to pass into setupOreGenPart2 to do its thing.
     //This is an experimental thing on my part.
     static Category[] lavaOreBiomes = {Biome.Category.NETHER};
@@ -49,8 +52,8 @@ public class MFMOreGen {
     	//A boolean that you can check with your config, or just hard code send it a false to avoid that step
     	//A vein size integer
     	//A CountRangeConfig object with the Veins Per Chunk, MinHeight, MaxHeightBase (should be 0), and MaxHeight
-    	setupOreGenPart2(lavaOreBiomes, OreFeatureConfig.FillerBlockType.NETHERRACK, MFMBlockStates.BLOCK_LAVA_ORE, enableLavaOreGeneration, lavaOreVeinSize, lavaOreCfg);
-    	setupOreGenPart2(bituminousBiomes, OreFeatureConfig.FillerBlockType.NATURAL_STONE, MFMBlockStates.BLOCK_BITUMINOUS_COAL_ORE, enableBituminousGeneration, bituminousVeinSize, bituminousCfg);
+    	setupOreGenPart2(lavaOreBiomes, OreFeatureConfig.FillerBlockType.NETHERRACK, MFMBlocks.block_lava_ore, enableLavaOreGeneration, lavaOreVeinSize, lavaOreCfg);
+    	setupOreGenPart2(bituminousBiomes, OreFeatureConfig.FillerBlockType.NATURAL_STONE, MFMBlocks.block_bituminous_coal_ore, enableBituminousGeneration, bituminousVeinSize, bituminousCfg);
     }
     
     //This baby does all the hard work.
@@ -59,7 +62,7 @@ public class MFMOreGen {
     //It's only flaw is that you cannot easily have it generate an ore in all biomes. If you wanted that, you could add an extra boolean for it and set up another if else that doesn't exclude NETHER and THEEND from the catchall.
     //To generate it in the whole overworld, just pass in an empty Category[]
     //To generate it in a specific overworld biome(s), pass a Category[] with those biome(s). Biomes include NETHER and THEEND.
-    public static void setupOreGenPart2(Category[] wantedBiomes, OreFeatureConfig.FillerBlockType stoneType, BlockState wantedBlock, boolean configSwitch, int veinSize, CountRangeConfig cfg) {
+    public static void setupOreGenPart2(Category[] wantedBiomes, OreFeatureConfig.FillerBlockType stoneType, Block wantedBlock, boolean configSwitch, int veinSize, CountRangeConfig cfg) {
     
     //Check for and handle requests for one specific biome or multiple specific biomes	
     if(wantedBiomes.length > 0) {
@@ -69,7 +72,7 @@ public class MFMOreGen {
     		//Use ArrayUtils to see if our Category[] wantedBiomes contains the current biome in the loop, and if so, generate the ore.
     			if(ArrayUtils.contains(wantedBiomes, biome.getCategory())) {
     				//This is how we actually add the ore generation to the biome(s)
-    					biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock, veinSize), Placement.COUNT_RANGE, cfg));
+    					biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize), Placement.COUNT_RANGE, cfg));
     				} //end if(ArrayUtils.contains(wantedBiomes...)
     			} //End for loop
     	} //End if(configSwitch)
@@ -88,7 +91,7 @@ public class MFMOreGen {
     		//For any biome that ISN'T the end of the nether, we're going to execute our oregen code
     		if(!(biome.getCategory() == Biome.Category.THEEND || biome.getCategory() == Biome.Category.NETHER)) {
     			//This is how we actually add the ore generation to the biome(s)
-    			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock, veinSize), Placement.COUNT_RANGE, cfg));
+    			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize), Placement.COUNT_RANGE, cfg));
     		}//End if check
     	}// End for loop
     }//End if(configSwitch) check
