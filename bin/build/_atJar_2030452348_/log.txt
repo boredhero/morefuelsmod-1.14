@@ -1,5 +1,0 @@
-Args: "--inJar", "/home/noah/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.1.96/forge-1.14.4-28.1.96-injected.jar", "--outJar", "/home/noah/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.1.96_mapped_snapshot_20190719-1.14.3/forge-1.14.4-28.1.96_mapped_snapshot_20190719-1.14.3.jar", "--logFile", "accesstransform.log", "--atFile", "/home/noah/Coding/morefuelsmod-1.14/build/_atJar_2030452348_/parent_at.cfg"
-Classpath: /home/noah/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/0.14.4/accesstransformers-0.14.4-fatjar.jar
-WorkDir: /home/noah/Coding/morefuelsmod-1.14/build/_atJar_2030452348_
-Main: net.minecraftforge.accesstransformer.TransformerProcessor
-====================================
