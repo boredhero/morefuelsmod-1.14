@@ -11,7 +11,7 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.registries.ForgeRegistries;
-
+import morefuelsmod.boredhero.morefuelsmod.config.MoreFuelsModConfig;
 import morefuelsmod.boredhero.morefuelsmod.init.MFMBlocks;
 
 /*
@@ -27,9 +27,9 @@ public class MFMOreGen {
 	private static final OreFeatureConfig.FillerBlockType nether = OreFeatureConfig.FillerBlockType.NETHERRACK;
 	//These are switches for a config to eventually change. For now, they are always set to true.
     //Ex: final static boolean enableBlockNameGeneration = true;
-    final static boolean enableBituminousGeneration = true;
-    final static boolean enableLavaOreNetherGeneration = true;
-    final static boolean enableLavaOreOverworldGeneration = true;
+    final static boolean enableBituminousGeneration = MoreFuelsModConfig.enableBituminousGeneration;
+    final static boolean enableLavaOreNetherGeneration = MoreFuelsModConfig.enableLavaOreNetherGeneration;
+    final static boolean enableLavaOreOverworldGeneration = MoreFuelsModConfig.enableLavaOreOverworldGeneration;
     
     //These are vein sizes
     //Ex: private static final int blockNameVeinSize = a positive integer for the number of blocks in the vein

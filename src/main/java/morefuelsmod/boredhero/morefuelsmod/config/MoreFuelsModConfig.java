@@ -1,6 +1,10 @@
 package morefuelsmod.boredhero.morefuelsmod.config;
 
-//Credit to Cadiboo on config file
+/*
+ * Credit to Cadiboo on the file
+ * Source: https://gist.github.com/Cadiboo/f0a2d9c103e7d9aefa8b03d571390f82
+ */
+
 
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -8,7 +12,6 @@ import morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.ForgeConfigSpec.BooleanValue;
 import net.minecraftforge.common.ForgeConfigSpec.Builder;
-import net.minecraftforge.common.ForgeConfigSpec.IntValue;
 
 public class MoreFuelsModConfig {
 
@@ -20,28 +23,37 @@ public class MoreFuelsModConfig {
         COMMON = specPair.getLeft();
 	}
 	
-	public static boolean aBoolean;
-    public static int anInt;
+    public static boolean enableBituminousGeneration;
+    public static boolean enableLavaOreNetherGeneration;
+    public static boolean enableLavaOreOverworldGeneration;
 
     public static void bakeConfig() {
-        aBoolean = COMMON.aBoolean.get();
-        anInt = COMMON.anInt.get();
+        enableBituminousGeneration = COMMON.enableBituminousGeneration.get();
+        enableLavaOreNetherGeneration = COMMON.enableLavaOreNetherGeneration.get();
+        enableLavaOreOverworldGeneration = COMMON.enableLavaOreOverworldGeneration.get();
     }
 	//Internal class
 	public static class Common{
-        public final BooleanValue aBoolean;
-        public final IntValue anInt;
+        public final BooleanValue enableBituminousGeneration;
+        public final BooleanValue enableLavaOreNetherGeneration;
+        public final BooleanValue enableLavaOreOverworldGeneration;
 
         public Common(Builder builder) {
-            aBoolean = builder
-                    .comment("aBoolean usage description")
-                    .translation(MoreFuelsMod.modid + ".config." + "aBoolean")
-                    .define("aBoolean", false);
-
-            anInt = builder
-                    .comment("anInt usage description")
-                    .translation(MoreFuelsMod.modid + ".config." + "anInt")
-                    .defineInRange("anInt", 10, 0, 100);
-	}
+        	
+            enableBituminousGeneration = builder
+                    .comment("Enable Bituminous Coal Ore Generation")
+                    .translation(MoreFuelsMod.modid + ".config." + "enableBituminousGeneration")
+                    .define("enableBituminousGeneration", true);
+            
+            enableLavaOreNetherGeneration = builder
+                    .comment("Enable Lava Ore Genereation in the Nether")
+                    .translation(MoreFuelsMod.modid + ".config." + "enableLaveOreNetherGeneration")
+                    .define("enableLavaOreNetherGeneration", true);
+            
+            enableLavaOreOverworldGeneration = builder
+            		.comment("Enable Lava Ore Generation in the Overworld")
+            		.translation(MoreFuelsMod.modid + ".config." + "enableLavaOreOverworldGeneration")
+            		.define("enableLavaOreOverworldGeneration", true);
+	}	
 }
 }
