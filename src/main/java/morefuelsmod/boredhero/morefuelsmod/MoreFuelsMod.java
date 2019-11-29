@@ -37,7 +37,6 @@ public class MoreFuelsMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
-    //Pre-Init
     private void setup(final FMLCommonSetupEvent event)
     {
         LOGGER.info("Loading morefuelsmod-" + mcversion + " " + version);
@@ -56,19 +55,5 @@ public class MoreFuelsMod {
     public void onServerStarting(FMLServerStartingEvent event) {
         // do something when the server starts
         LOGGER.info("Server instance detected. Ditching the clientside.");
-    }
-
-    @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents {
-        @SubscribeEvent
-        public static void blockRegister(final RegistryEvent.Register<Block> blockRegistryEvent) {
-            // register a new block here
-        	//TODO: REMOVE THIS. I HAVE IT HANDLED IN MFMEventSubscriber.java.
-        	//This is just leftover from the ExampleMod built in class.
-        }
-        public static void itemRegister(final RegistryEvent.Register<Item> itemRegistryEvent) {
-           	//TODO: REMOVE THIS. I HAVE IT HANDLED IN MFMEventSubscriber.java.
-        	//This is just leftover from the ExampleMod built in class.
-        }
     }
 }
