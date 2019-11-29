@@ -31,7 +31,7 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 
 #### Further Notes:
 * While it *IS* possible to use IntelliJ IDEA, I **strongly prefer** contributors to use Eclipse just to keep the code nice n pure since this repo has more than just the src folder.
-* You can configure the amount of RAM used for script operations/build operations in gradle.properties. Default for this repo is 4 but adjust accordingly.
+* You can configure the amount of RAM used for script operations/build operations in gradle.properties. Default for this repo is 5 GB but adjust accordingly.
 
 ### Building a Jar
 
