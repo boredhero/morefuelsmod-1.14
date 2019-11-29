@@ -28,7 +28,7 @@ public class MoreFuelsModConfig {
         anInt = COMMON.anInt.get();
     }
 	//Internal class
-	public class Common{
+	public static class Common{
         public final BooleanValue aBoolean;
         public final IntValue anInt;
 
