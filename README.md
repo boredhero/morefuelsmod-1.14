@@ -62,6 +62,8 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 
 * Do an assessment of what fuel tweaks are necessary in 1.14.4 before implemeneting them
 * Implement fuel tweaks as per assessment
+* Implement a rich fully featured config
+	* Optional: Have a GUI config
 * Implement block/item crafting recipies and fuel timings
 * Investigate support Forge 1.14.2 and 1.14.3 with one jar
 	* This may be a little more complicated because of the mods.toml format. Not sure if it'll allow but should try
