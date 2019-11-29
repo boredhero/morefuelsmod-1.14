@@ -14,11 +14,11 @@ import morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod;
 
 @ObjectHolder(MoreFuelsMod.modid)
 public class MFMBlocks {
-	public static Block block_coke = Blocks.AIR;
-	public static Block block_bituminous_coal = Blocks.AIR;
-	public static Block block_creative_infinite_fuel = Blocks.AIR;
-	public static Block block_pellet_fuel = Blocks.AIR;
-	public static Block block_compressed_pellet_fuel = Blocks.AIR;
-	public static Block block_lava_ore = Blocks.AIR;
-	public static Block block_bituminous_coal_ore = Blocks.AIR;
+	public static Block BLOCK_COKE = Blocks.AIR;
+	public static Block BLOCK_BITUMINOUS_COAL = Blocks.AIR;
+	public static Block BLOCK_CREATIVE_INFINITE_FUEL = Blocks.AIR;
+	public static Block BLOCK_PELLET_FUEL = Blocks.AIR;
+	public static Block BLOCK_COMPRESSED_PELLET_FUEL = Blocks.AIR;
+	public static Block BLOCK_LAVA_ORE = Blocks.AIR;
+	public static Block BLOCK_BITUMINOUS_COAL_ORE = Blocks.AIR;
 }

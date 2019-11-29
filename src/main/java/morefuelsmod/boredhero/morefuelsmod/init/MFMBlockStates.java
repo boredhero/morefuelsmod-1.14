@@ -15,6 +15,6 @@ import net.minecraftforge.registries.ObjectHolder;
 public class MFMBlockStates {
 	//These are experimental. I don't know the consequences, really, they're only here so the OreGen class can work.
 	//Hope they don't break anything else.
-	public static BlockState block_bituminous_coal_ore = MFMUtil._null();
-	public static BlockState block_lava_ore = MFMUtil._null();
+	public static BlockState BLOCK_BITUMINOUS_COAL_ORE = MFMUtil._null();
+	public static BlockState BLOCK_LAVA_ORE = MFMUtil._null();
 }
