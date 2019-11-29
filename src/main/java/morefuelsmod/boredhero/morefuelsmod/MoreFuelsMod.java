@@ -14,6 +14,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+//TODO: BEWARE THAT THIS MAIN CLASS IS CLUTTERED AND IS A COPY - PASTE - MODIFY OF THE 1.14 EXAMPLEMOD.JAVA
+//MANY THINGS THAT LOOK LIKE THEY ARE MISSING HERE ARE INSTEAD TAKEN CARE OF IN MFMEventSubscriber.java
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MoreFuelsMod.modid)
 public class MoreFuelsMod {
@@ -55,17 +58,17 @@ public class MoreFuelsMod {
         LOGGER.info("Server instance detected. Ditching the clientside.");
     }
 
-    // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
-    // Event bus for receiving Registry Events)
     @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents {
         @SubscribeEvent
         public static void blockRegister(final RegistryEvent.Register<Block> blockRegistryEvent) {
             // register a new block here
-            LOGGER.info("HELLO from Register Block");
+        	//TODO: REMOVE THIS. I HAVE IT HANDLED IN MFMEventSubscriber.java.
+        	//This is just leftover from the ExampleMod built in class.
         }
         public static void itemRegister(final RegistryEvent.Register<Item> itemRegistryEvent) {
-        	
+           	//TODO: REMOVE THIS. I HAVE IT HANDLED IN MFMEventSubscriber.java.
+        	//This is just leftover from the ExampleMod built in class.
         }
     }
 }
