@@ -1,7 +1,6 @@
 package morefuelsmod.boredhero.morefuelsmod.init;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraftforge.registries.ObjectHolder;
 
 import morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod;

@@ -30,30 +30,22 @@ public class MFMOreGen {
     //Ex: final static boolean enableBlockNameGeneration = true;
     final static boolean enableBituminousGeneration = true;
     final static boolean enableLavaOreGeneration = true;
-    //Test to validate this class's functionality
-    final static boolean enableWeirdDiamondBlocks = true;
     
     //These are vein sizes
     //Ex: private static final int blockNameVeinSize = a positive integer for the number of blocks in the vein
     private static final int bituminousVeinSize = 5;
     private static final int lavaOreVeinSize = 3;
-    //Test to validate this class's functionality
-    private static final int weirdDiamondBlocksVeinSize = 5;
     
     //CountRangeConfig(Veins Per Chunk Count, MinHeight, MaxHeightBase, MaxHeight)
     //Ex: private static final CountRangeConfig blockNameCfg = new CountRangeConfig(Veins Per Chunk Count, MinHeight, MaxHeightBase, MaxHeight);
     //As far as I can tell, MaxHeightBase should always be 0 in most if not all ore generation cases.
     private static final CountRangeConfig bituminousCfg = new CountRangeConfig(30, 1, 0, 128);
     private static final CountRangeConfig lavaOreCfg = new CountRangeConfig(30, 1, 0, 128);
-    //Test to validate this class's functionality
-    private static final CountRangeConfig weirdDiamondBlocksCfg = new CountRangeConfig(30, 1, 0, 128);
+
     //These are static Category arrays of Biome.Category.BIOMETYPE to pass into setupOreGenPart2 to do its thing.
     //This is an experimental thing on my part.
     static Category[] lavaOreBiomes = {Biome.Category.NETHER};
     static Category[] bituminousBiomes = {};
-    //Test to validate this class's functionality
-    static Category[] weirdDiamondBlocks = {};
-    static Category[] weirdDiamondBlocksInNether = {Biome.Category.NETHER};
     
     //The first part of my redesigned OreGen class. This just calls another method that does all the work and feeds it what it needs.
     public static void setupOreGenPart1() {
@@ -65,9 +57,6 @@ public class MFMOreGen {
     	//A CountRangeConfig object with the Veins Per Chunk, MinHeight, MaxHeightBase (should be 0), and MaxHeight
     	setupOreGenPart2(lavaOreBiomes, nether, MFMBlocks.BLOCK_LAVA_ORE, enableLavaOreGeneration, lavaOreVeinSize, lavaOreCfg);
     	setupOreGenPart2(bituminousBiomes, stone, MFMBlocks.BLOCK_BITUMINOUS_COAL_ORE, enableBituminousGeneration, bituminousVeinSize, bituminousCfg);
-    	//Test to validate this class's functionality
-    	setupOreGenPart2(weirdDiamondBlocks, stone, Blocks.DIAMOND_BLOCK, enableWeirdDiamondBlocks, weirdDiamondBlocksVeinSize, weirdDiamondBlocksCfg);
-    	setupOreGenPart2(weirdDiamondBlocksInNether, nether, Blocks.DIAMOND_BLOCK, enableWeirdDiamondBlocks, weirdDiamondBlocksVeinSize, weirdDiamondBlocksCfg);
     }
     
     //This baby does all the hard work.
