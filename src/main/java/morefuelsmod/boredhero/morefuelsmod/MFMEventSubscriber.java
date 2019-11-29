@@ -2,6 +2,10 @@ package morefuelsmod.boredhero.morefuelsmod;
 //Credit for this lovely class goes to Cadiboo
 //https://github.com/Cadiboo/Example-Mod/blob/1.14.4/src/main/java/io/github/cadiboo/examplemod/ModEventSubscriber.java
 
+import java.util.logging.LogManager;
+
+import org.apache.logging.log4j.Logger;
+
 import com.google.common.base.Preconditions;
 
 import net.minecraft.block.Block;
@@ -12,10 +16,11 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
-
+import morefuelsmod.boredhero.morefuelsmod.config.MoreFuelsModConfig;
 import morefuelsmod.boredhero.morefuelsmod.init.MFMItemGroups;
 
 @EventBusSubscriber(modid = MoreFuelsMod.modid, bus = EventBusSubscriber.Bus.MOD)
@@ -87,6 +92,12 @@ public final class MFMEventSubscriber {
 					registry.register(setup(blockItem, blockRegistryName));
 				}
 	}
+	
+	@SubscribeEvent
+	public static void onModConfigEvent(final ModConfig.ModConfigEvent configEvent) {
+	    MoreFuelsModConfig.bakeConfig();
+	}
+	
 	public static <T extends IForgeRegistryEntry<T>> T setup(final T entry, final String name) {
 		return setup(entry, new ResourceLocation(MoreFuelsMod.modid, name));
 	}
