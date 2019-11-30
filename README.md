@@ -64,7 +64,10 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 * Implement fuel tweaks as per assessment
 * Implement a rich fully featured config
 	* Optional: Have a GUI config
-* Implement block/item crafting recipies and fuel timings
+* Implement block/item crafting recipies
+	* Mostly done now.
+		* Still need to sort out fuel pellet madness
+* Implement fuel timings.
 * Investigate support Forge 1.14.2 and 1.14.3 with one jar
 	* This may be a little more complicated because of the mods.toml format. Not sure if it'll allow but should try
 * Investigate server crashing on startup. Proxy necessary? Sided annotations?
