@@ -38,7 +38,8 @@ public final class MFMEventSubscriber {
 				setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 5.0F)), "block_creative_infinite_fuel"),
 				//TODO: Set item drop for block_lava_ore
 				setup(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3.0F, 5.0F)), "block_lava_ore"),
-				setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 5.0F)), "block_bituminous_coal_ore")
+				setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 5.0F)), "block_bituminous_coal_ore"),
+				setup(new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F)), "block_dried_plant")
 
 				);
 	}

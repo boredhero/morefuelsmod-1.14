@@ -2,15 +2,14 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "block_compressed_pellet_fuel",
+      "name": "block_dried_plant",
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "morefuelsmod:block_compressed_pellet_fuel"
+          "name": "morefuelsmod:block_dried_plant"
         }
       ]
     }
   ]
 }
-

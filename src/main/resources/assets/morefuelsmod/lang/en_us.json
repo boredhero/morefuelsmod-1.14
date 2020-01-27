@@ -1,5 +1,4 @@
 {
-	"item.morefuelsmod.test_item": "Test Item",
 	"item.morefuelsmod.coke": "Coke",
 	"item.morefuelsmod.bituminous_coal": "Bituminous Coal",
 	"item.morefuelsmod.can_of_slimoline": "Can of Slimoline",
@@ -10,12 +9,12 @@
 	"item.morefuelsmod.tempered_glass_orb": "Tempered Glass Orb (Empty)",
 	"item.morefuelsmod.dried_plant": "Dried Plant",
 
-	"block.morefuelsmod.test_block": "Test Block",
 	"block.morefuelsmod.block_coke": "Coke Block",
 	"block.morefuelsmod.block_bituminous_coal": "Bituminous Coal Block",
 	"block.morefuelsmod.block_creative_infinite_fuel": "Infinite Fuel Block (Creative Only)",
 	"block.morefuelsmod.block_lava_ore": "Lava Ore",
 	"block.morefuelsmod.block_bituminous_coal_ore": "Bituminous Coal Ore",
+	"block.morefuelsmod.block_dried_plant": "Dried Plant Block",
 
 	"itemGroup.morefuelsmod": "More Fuels Mod"
 }

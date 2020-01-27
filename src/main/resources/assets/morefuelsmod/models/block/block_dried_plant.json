@@ -1,7 +1,7 @@
 {
         "parent": "block/cube_all",
         "textures": {
-                "all": "morefuelsmod:block/block_compressed_pellet_fuel"
+                "all": "morefuelsmod:block/block_dried_plant"
         }
 }
 
