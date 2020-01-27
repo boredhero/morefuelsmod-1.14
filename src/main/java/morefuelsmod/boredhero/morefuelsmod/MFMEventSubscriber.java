@@ -2,10 +2,6 @@ package morefuelsmod.boredhero.morefuelsmod;
 //Credit for this lovely class goes to Cadiboo
 //https://github.com/Cadiboo/Example-Mod/blob/1.14.4/src/main/java/io/github/cadiboo/examplemod/ModEventSubscriber.java
 
-import java.util.logging.LogManager;
-
-import org.apache.logging.log4j.Logger;
-
 import com.google.common.base.Preconditions;
 
 import net.minecraft.block.Block;

@@ -20,5 +20,6 @@ public class MFMBlocks {
 	public static final Block BLOCK_COMPRESSED_PELLET_FUEL = MFMUtil._null();
 	public static final Block BLOCK_LAVA_ORE = MFMUtil._null();
 	public static final Block BLOCK_BITUMINOUS_COAL_ORE = MFMUtil._null();
+	public static final Block BLOCK_DRIED_PLANT = MFMUtil._null();
 	//These produce a crash when used in MFMOreGen.java as is. Help
 }
