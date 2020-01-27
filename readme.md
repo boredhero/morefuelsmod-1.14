@@ -70,12 +70,13 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 * Make a stripped down version and release as More Fuels Mod Light
 	* Try to do this as a branch on this GitHub repo for better organization going forward
 * Adjust build.gradle to include a sources jar in the build folder when building
-* Add RFtL Functionality
 
 ## PUSH TO v1.7.1
 * Look into combining all of the dried plant smelting json files into one ala [this method](https://github.com/skylinerw/guides/blob/master/java/recipes.md#smelting-ingredient)
 * Better config
 	* Maayyyybeeeeee GUI config...will still probably push that to v1.8.0
+	* Allow RFtL disable from config.
+		* Unsure how to control JSONs from config code....
 
 ## PUSH TO v1.8.0
 * Make chorus and purpur flammable using rEfLeCtIoN (or Block Properties??)
