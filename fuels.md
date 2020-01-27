@@ -57,6 +57,7 @@
 * Purpur Block --> 15s/300 ticks
 * Purpur Pillar --> 15s/300 ticks
 * Purpur Slab --> 7.5s/150 ticks
+* Purpur Stairs --> 22.5s/450 ticks
 * End Rod --> 33.75s/675 ticks
 * Lever --> 1.9s/38 ticks
 * Mushroom Blocks (Stem, Brown, Red) --> 15s/300 ticks
