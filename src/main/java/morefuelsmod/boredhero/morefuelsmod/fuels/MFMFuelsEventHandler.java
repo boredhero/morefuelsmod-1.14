@@ -17,7 +17,7 @@ public class MFMFuelsEventHandler {
 	
 	private MFMFuelsEventHandler() {
 		//I don't really know why this is here or what it does, just that it has to be here and nothing should
-	};
+	}
 	
 	@SubscribeEvent
 	public void onFurnaceFuelBurnTimeEvent(FurnaceFuelBurnTimeEvent event) {
