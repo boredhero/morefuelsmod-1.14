@@ -36,8 +36,6 @@ public final class MFMEventSubscriber {
 				setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 5.0F)), "block_coke"),
 				setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 5.0F)), "block_bituminous_coal"),
 				setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 5.0F)), "block_creative_infinite_fuel"),
-				//setup(new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F)), "block_pellet_fuel"),
-				//setup(new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F)), "block_compressed_pellet_fuel"),
 				//TODO: Set item drop for block_lava_ore
 				setup(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3.0F, 5.0F)), "block_lava_ore"),
 				setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 5.0F)), "block_bituminous_coal_ore")
@@ -60,12 +58,11 @@ public final class MFMEventSubscriber {
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "bituminous_coal"),
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "can_of_slimoline"),
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "coal_dust"),
-				//setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "compressed_pellet_fuel"),
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "glass_orb"),
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "lava_crystals"),
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "lava_glass_orb"),
-				//setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "pellet_fuel"),
-				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "tempered_glass_orb")
+				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "tempered_glass_orb"),
+				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "dried_plant")
 				);
 
 
