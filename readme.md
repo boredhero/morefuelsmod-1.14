@@ -72,6 +72,11 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 * Adjust build.gradle to include a sources jar in the build folder when building
 * Add RFtL Functionality
 
+## PUSH TO v1.7.1
+* Look into combining all of the dried plant smelting json files into one ala [this method](https://github.com/skylinerw/guides/blob/master/java/recipes.md#smelting-ingredient)
+* Better config
+	* Maayyyybeeeeee GUI config...will still probably push that to v1.8.0
+
 ## PUSH TO v1.8.0
 * Make chorus and purpur flammable using rEfLeCtIoN (or Block Properties??)
 * Add scrap metal
