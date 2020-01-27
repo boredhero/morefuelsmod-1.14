@@ -7,6 +7,7 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 
 ### Credits
 * [Cadiboo's Modding Tutorial](https://cadiboo.github.io/tutorials/1.14.4/forge/) + [Example GitHub Repo](https://github.com/Cadiboo/Example-Mod)
+* [Skylinerw's Guide](https://github.com/skylinerw/guides/blob/master/java/recipes.md#smelting)
 * The Forge Folks
 * The Mojang Folks
 
@@ -60,13 +61,9 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 
 ## TODO:
 
-* Make Chorus + Purpur stuff flammable
-* Implement fuel tweaks as per assessment in Fuels.md
 * Implement a rich fully featured config
-	* Optional: Have a GUI config
 * Implement block/item crafting recipies
 	* Mostly done now.
-* Implement fuel timings.
 * Investigate support Forge 1.14.2 and 1.14.3 with one jar
 	* This may be a little more complicated because of the mods.toml format. Not sure if it'll allow but should try
 * Investigate server crashing on startup. Proxy necessary? Sided annotations?
@@ -74,3 +71,10 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 	* Try to do this as a branch on this GitHub repo for better organization going forward
 * Adjust build.gradle to include a sources jar in the build folder when building
 * Add RFtL Functionality
+
+## PUSH TO v1.8.0
+* Make chorus and purpur flammable using rEfLeCtIoN (or Block Properties??)
+* Add scrap metal
+* Make a furance that burns all the wood and outputs scrap metal
+* Add processing methods for scrap metal to return back to usable ingots
+* GUI Config

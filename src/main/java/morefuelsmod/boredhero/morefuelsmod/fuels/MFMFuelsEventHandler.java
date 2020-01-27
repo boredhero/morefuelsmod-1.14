@@ -16,7 +16,7 @@ public class MFMFuelsEventHandler {
 	public static final MFMFuelsEventHandler instance = new MFMFuelsEventHandler();
 	
 	private MFMFuelsEventHandler() {
-		
+		//I don't really know why this is here or what it does, just that it has to be here and nothing should
 	};
 	
 	@SubscribeEvent
@@ -261,5 +261,3 @@ public class MFMFuelsEventHandler {
 	}
 	
 }
-
-//this is bad horribly broken 1.12 tutorial copy/paste. 
