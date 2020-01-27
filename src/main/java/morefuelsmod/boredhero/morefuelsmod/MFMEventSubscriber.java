@@ -25,53 +25,53 @@ import morefuelsmod.boredhero.morefuelsmod.init.MFMItemGroups;
 
 @EventBusSubscriber(modid = MoreFuelsMod.modid, bus = EventBusSubscriber.Bus.MOD)
 public final class MFMEventSubscriber {
-		
+
 	@SubscribeEvent
 	public static void onRegisterBlocks(RegistryEvent.Register<Block> event) {
 		event.getRegistry().registerAll(
 				//Fill in blocks here in the following format.
 				//setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F)), "test_block"),
-				
+
 				//Real MFM blocks start here
 				setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 5.0F)), "block_coke"),
 				setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 5.0F)), "block_bituminous_coal"),
 				setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 5.0F)), "block_creative_infinite_fuel"),
-				setup(new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F)), "block_pellet_fuel"),
-				setup(new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F)), "block_compressed_pellet_fuel"),
+				//setup(new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F)), "block_pellet_fuel"),
+				//setup(new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F)), "block_compressed_pellet_fuel"),
 				//TODO: Set item drop for block_lava_ore
 				setup(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3.0F, 5.0F)), "block_lava_ore"),
 				setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 5.0F)), "block_bituminous_coal_ore")
-				
+
 				);
 	}
-	
+
 	@SubscribeEvent
 	public static void onRegisterItems(RegistryEvent.Register<Item> event) {
-		
+
 		final IForgeRegistry<Item> registry = event.getRegistry();
-		
+
 		event.getRegistry().registerAll(
 				//Fill in items here in the following format.
 				//setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "test_item"),
 				//Lots of properties can come after .Properties() as .Thing() tack-ons. StackSize(), etc.
-				
+
 				//Real MFM Items start here. We are going for v1.6.2 compliance with this intial port.
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "coke"),
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "bituminous_coal"),
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "can_of_slimoline"),
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "coal_dust"),
-				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "compressed_pellet_fuel"),
+				//setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "compressed_pellet_fuel"),
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "glass_orb"),
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "lava_crystals"),
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "lava_glass_orb"),
-				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "pellet_fuel"),
+				//setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "pellet_fuel"),
 				setup(new Item(new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP)), "tempered_glass_orb")
 				);
-		
-				
+
+
 				for(final Block block : ForgeRegistries.BLOCKS.getValues()) {
 					final ResourceLocation blockRegistryName = block.getRegistryName();
-					//Make sure there are no null blocknames. 
+					//Make sure there are no null blocknames.
 					Preconditions.checkNotNull(blockRegistryName, "Registry Name of Block \"" + block + "\" of class \"" + block.getClass().getName() + "\"is null! This is not allowed!");
 					//Check if block is from morefuelsmod or not. We don't need to check vanilla blocks or other mods blocks
 					if (!blockRegistryName.getNamespace().equals(MoreFuelsMod.modid)) {
@@ -83,7 +83,7 @@ public final class MFMEventSubscriber {
 					//					if (block instanceof NoAutomaticBlockItem) {
 					//						continue;
 					//					} Comment taken from Cadiboo
-					
+
 					//Make ItemBlock properties and send to our tab
 					final Item.Properties properties = new Item.Properties().group(MFMItemGroups.MFM_ITEM_GROUP);
 					//Create the new BlockItem with the block and its properties
@@ -92,12 +92,12 @@ public final class MFMEventSubscriber {
 					registry.register(setup(blockItem, blockRegistryName));
 				}
 	}
-	
+
 	@SubscribeEvent
 	public static void onModConfigEvent(final ModConfig.ModConfigEvent configEvent) {
 	    MoreFuelsModConfig.bakeConfig();
 	}
-	
+
 	public static <T extends IForgeRegistryEntry<T>> T setup(final T entry, final String name) {
 		return setup(entry, new ResourceLocation(MoreFuelsMod.modid, name));
 	}
