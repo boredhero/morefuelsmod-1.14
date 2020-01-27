@@ -84,6 +84,7 @@
 * Grass --> Dried Plant
 * Fern --> Dried Plant
 * Seagrass --> Dried Plant
+* Tall Seagrass --> Dried Plant
 * Dandelion -- Dried Plant
 * Poppy --> Dried Plant
 * Blue Orchid --> Dried Plant

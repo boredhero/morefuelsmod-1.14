@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "minecraft:sugar_cane"
+    "item": "minecraft:wither_rose"
   },
   "result": "morefuelsmod:dried_plant",
   "experience": 0.15,

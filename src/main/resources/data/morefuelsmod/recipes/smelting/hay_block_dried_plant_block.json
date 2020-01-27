@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "minecraft:sugar_cane"
+    "item": "minecraft:hay_block"
   },
-  "result": "morefuelsmod:dried_plant",
+  "result": "morefuelsmod:block_dried_plant",
   "experience": 0.15,
   "cookingtime": 20
 }
