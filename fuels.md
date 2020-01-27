@@ -1,7 +1,8 @@
 ### Modded Fuels
 
-Dried Plant --> 7s/140 ticks
-Dried Plant Block --> 63s/1260 ticks
+* Dried Plant --> 7s/140 ticks
+* Dried Plant Block --> 63s/1260 ticks
+
 ---
 ### Tweaks made to existing fuels
 
