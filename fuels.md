@@ -49,6 +49,38 @@
 * Sponge (Dry) --> 7s/140 ticks
 * Piston (All Varities) --> 11.25s/225 ticks
 * Cobweb --> 1.25s/25 ticks
+* Torch --> 20.5s/410 ticks
+* Redstone Torch  --> 1.9s/38 ticks
+* Chorus Plant --> 15s/300 ticks
+* Chorus Flower --> 15s/300 ticks
+* Popped Chorus Fruit --> 15s/300 ticks
+* Purpur Block --> 15s/300 ticks
+* Purpur Pillar --> 15s/300 ticks
+* Purpur Slab --> 7.5s/150 ticks
+* End Rod --> 33.75s/675 ticks
+* Lever --> 1.9s/38 ticks
+* Mushroom Blocks (Stem, Brown, Red) --> 15s/300 ticks
+* String --> 1.25s/25t
+* Feather --> 1.25s/25t
+* Painting --> 20s/400s
+* Paper --> 7s/140 ticks
+* Book (All) --> 21s/420 ticks 
+* Minecart With Chest --> 30s/600 ticks
+* Bed (All) --> 26.25s/525 ticks
+* Dried Kelp --> 22.2s/444 ticks
+* Blaze Powder --> 60s/1200 ticks
+* Item Frame --> 15s/300 ticks
+* Maps (All) --> 60s/1200 ticks
+* Carrot On a Stick --> 8.15s/163 ticks 
+* Enchanted Books (All) --> 21s/420 ticks 
+* Armor Stand --> 11.25s/225 ticks
+* Shield --> 22.5s/450 ticks
+* Banner Pattern (All) --> 7s/140s
+* Campfire --> 130.65s/2613 ticks
+
+---
+
+### Things that just smelt into dried plant now
 * Grass --> Dried Plant
 * Fern --> Dried Plant
 * Seagrass --> Dried Plant
@@ -63,47 +95,17 @@
 * Lily of the Valley --> Dried Plant
 * Wither Rose --> Dried Plant
 * Mushroom (Item, Both) --> Dried Plant
-* Torch --> 20.5s/410 ticks
-* Redstone Torch  --> 1.9s/38 ticks
-* Chorus Plant --> 15s/300 ticks
-* Chorus Flower --> 15s/300 ticks
-* Popped Chorus Fruit --> 15s/300 ticks
-* Purpur Block --> 15s/300 ticks
-* Purpur Pillar --> 15s/300 ticks
-* Purpur Slab --> 7.5s/150 ticks
-* End Rod --> 33.75s/675 ticks
-* Lever --> 1.9s/38 ticks
-* Mushroom Blocks (Stem, Brown, Red) --> 15s/300 ticks
 * Vines --> Dried Plant
 * Lily Pad --> Dried Plant
-* Hay Bale --> Dried Plant Block --> 63s/1260 ticks 
 * Sunflower --> Dried Plant
 * Lilac --> Dried Plant
 * Rose Bush --> Dried Plant
 * Large Grass --> Dried Plant
 * Peony --> Dried Plant
 * Large Fern --> Dried Plant
-* String --> 1.25s/25t
-* Feather --> 1.25s/25t
 * Seeds (All) --> Dried Plant
 * Wheat --> Dried Plant
-* Painting --> 20s/400s
 * Sugar Cane --> Dried Plant
-* Paper --> 7s/140 ticks
-* Book (All) --> 21s/420 ticks 
-* Minecart With Chest --> 30s/600 ticks
-* Bed (All) --> 26.25s/525 ticks
-* Dried Kelp --> 22.2s/444 ticks
-* Blaze Powder --> 60s/1200 ticks
-* Item Frame --> 15s/300 ticks
 * Poisonous Potato --> Dried Plant
-* Maps (All) --> 60s/1200 ticks
-* Carrot On a Stick --> 8.15s/163 ticks 
-* Enchanted Books (All) --> 21s/420 ticks 
-* Armor Stand --> 11.25s/225 ticks
-* Shield --> 22.5s/450 ticks
-* Banner Pattern (All) --> 7s/140s
 * Sweet Berries --> Dried Plant
-* Campfire --> 130.65s/2613 ticks
-
----
+* Hay Bale --> Dried Plant Block --> 63s/1260 ticks 
