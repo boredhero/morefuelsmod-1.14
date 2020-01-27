@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "minecraft:sugar_cane"
+  },
+  "ingredient": {
+    "tag": "minecraft:poisonous_potato"
+  },
+  "result": "morefuelsmod:dried_plant",
+  "experience": 0.15,
+  "cookingtime": 20
+}
