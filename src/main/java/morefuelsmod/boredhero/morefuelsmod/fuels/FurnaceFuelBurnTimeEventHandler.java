@@ -7,7 +7,7 @@ import net.minecraft.item.Items;
 import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
-public class FurnaceFuelBurnTimeEventHandler {
+/*public class FurnaceFuelBurnTimeEventHandler {
 	public static final FurnaceFuelBurnTimeEventHandler instance = new FurnaceFuelBurnTimeEventHandler();
 	
 	private FurnaceFuelBurnTimeEventHandler() {
@@ -21,4 +21,6 @@ public class FurnaceFuelBurnTimeEventHandler {
 			}
 		}
 	}
-}
+} 
+*/
+//this is bad horribly broken 1.12 tutorial copy/paste. 
