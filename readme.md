@@ -60,7 +60,6 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 
 ## TODO:
 
-* Make crafting recipe for Dried Plant Block
 * Make Chorus + Purpur stuff flammable
 * Implement fuel tweaks as per assessment in Fuels.md
 * Implement a rich fully featured config
