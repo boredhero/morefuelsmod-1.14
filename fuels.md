@@ -7,8 +7,8 @@
 ### Tweaks made to existing fuels
 
 * Planks -- > 3.75s/75 ticks
-* Slabs --> 1.875s/75 ticks
-* Sticks -- > 1.875s/37.5 ticks
+* Slabs --> 1.9s/38 ticks
+* Sticks -- > 1.9s/38 ticks
 * Bowl --> 2.8s/56 ticks
 * Wooden Door --> 7.5s/150 ticks
 * Boat --> 18.75s/375 ticks
