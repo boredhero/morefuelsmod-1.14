@@ -23,11 +23,6 @@ public class MFMOreGen {
 	//Space savers when calling setupOreGenPart2();
 	private static final OreFeatureConfig.FillerBlockType stone = OreFeatureConfig.FillerBlockType.NATURAL_STONE;
 	private static final OreFeatureConfig.FillerBlockType nether = OreFeatureConfig.FillerBlockType.NETHERRACK;
-	//These are switches for a config to eventually change. For now, they are always set to true.
-    //Ex: final static boolean enableBlockNameGeneration = true;
-    //boolean enableBituminousGeneration = MFMConfig.enableBituminousGeneration;
-    //boolean enableLavaOreNetherGeneration = MFMConfig.enableLavaOreNetherGeneration;
-    //boolean enableLavaOreOverworldGeneration = MFMConfig.enableLavaOreOverworldGeneration;
     
     //These are vein sizes
     //Ex: private static final int blockNameVeinSize = a positive integer for the number of blocks in the vein
