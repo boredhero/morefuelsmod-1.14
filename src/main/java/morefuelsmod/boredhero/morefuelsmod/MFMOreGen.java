@@ -18,6 +18,8 @@ import morefuelsmod.boredhero.morefuelsmod.init.MFMBlocks;
  * Source: https://www.minecraftforge.net/forum/topic/72953-1143-working-ore-generation-class/
  */
 
+//TODO: In 1.7.1, overhaul the config system so that it works. Until then, config is disabled.
+
 public class MFMOreGen {
     
 	//Space savers when calling setupOreGenPart2();

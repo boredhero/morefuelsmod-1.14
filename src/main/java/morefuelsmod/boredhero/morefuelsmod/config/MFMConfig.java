@@ -41,17 +41,17 @@ public class MFMConfig {
         public Common(Builder builder) {
         	
             enableBituminousGeneration = builder
-                    .comment("Enable Bituminous Coal Ore Generation")
+                    .comment("Enable Bituminous Coal Ore Generation: THIS IS CURRENTLY BROKEN, SORRY")
                     .translation(MoreFuelsMod.modid + ".config." + "enableBituminousGeneration")
                     .define("enableBituminousGeneration", true);
             
             enableLavaOreNetherGeneration = builder
-                    .comment("Enable Lava Ore Genereation in the Nether")
+                    .comment("Enable Lava Ore Genereation in the Nether: THIS IS CURRENTLY BROKEN, SORRY")
                     .translation(MoreFuelsMod.modid + ".config." + "enableLaveOreNetherGeneration")
                     .define("enableLavaOreNetherGeneration", true);
             
             enableLavaOreOverworldGeneration = builder
-            		.comment("Enable Lava Ore Generation in the Overworld")
+            		.comment("Enable Lava Ore Generation in the Overworld: THIS IS CURRENTLY BROKEN, SORRY")
             		.translation(MoreFuelsMod.modid + ".config." + "enableLavaOreOverworldGeneration")
             		.define("enableLavaOreOverworldGeneration", true);
 	}	
