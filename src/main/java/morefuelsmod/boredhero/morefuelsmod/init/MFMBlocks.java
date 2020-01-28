@@ -16,8 +16,6 @@ public class MFMBlocks {
 	public static final Block BLOCK_COKE = MFMUtil._null();
 	public static final Block BLOCK_BITUMINOUS_COAL = MFMUtil._null();
 	public static final Block BLOCK_CREATIVE_INFINITE_FUEL = MFMUtil._null();
-	public static final Block BLOCK_PELLET_FUEL = MFMUtil._null();
-	public static final Block BLOCK_COMPRESSED_PELLET_FUEL = MFMUtil._null();
 	public static final Block BLOCK_LAVA_ORE = MFMUtil._null();
 	public static final Block BLOCK_BITUMINOUS_COAL_ORE = MFMUtil._null();
 	public static final Block BLOCK_DRIED_PLANT = MFMUtil._null();
