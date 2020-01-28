@@ -73,6 +73,7 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 
 ## PUSH TO v1.7.1
 * Look into combining all of the dried plant smelting json files into one ala [this method](https://github.com/skylinerw/guides/blob/master/java/recipes.md#smelting-ingredient)
+* Look into dynamically generating all json files ala [this](https://wiki.mcjty.eu/modding/index.php?title=Tut14_Ep7) to help aid in making them enableable/disableable via a config switch.
 * Better config
 	* Maayyyybeeeeee GUI config...will still probably push that to v1.8.0
 	* Allow RFtL disable from config.
