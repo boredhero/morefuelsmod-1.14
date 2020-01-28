@@ -16,7 +16,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
-import morefuelsmod.boredhero.morefuelsmod.config.MoreFuelsModConfig;
+import morefuelsmod.boredhero.morefuelsmod.config.MFMConfig;
 import morefuelsmod.boredhero.morefuelsmod.init.MFMItemGroups;
 
 @EventBusSubscriber(modid = MoreFuelsMod.modid, bus = EventBusSubscriber.Bus.MOD)
@@ -89,7 +89,7 @@ public final class MFMEventSubscriber {
 
 	@SubscribeEvent
 	public static void onModConfigEvent(final ModConfig.ModConfigEvent configEvent) {
-	    MoreFuelsModConfig.bakeConfig();
+	    MFMConfig.bakeConfig();
 	}
 
 	public static <T extends IForgeRegistryEntry<T>> T setup(final T entry, final String name) {

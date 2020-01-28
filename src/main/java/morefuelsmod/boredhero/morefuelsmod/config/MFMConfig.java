@@ -13,7 +13,7 @@ import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.ForgeConfigSpec.BooleanValue;
 import net.minecraftforge.common.ForgeConfigSpec.Builder;
 
-public class MoreFuelsModConfig {
+public class MFMConfig {
 
 	public static final Common COMMON;
 	public static final ForgeConfigSpec clientSpec;

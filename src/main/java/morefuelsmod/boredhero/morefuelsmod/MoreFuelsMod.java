@@ -3,7 +3,7 @@ package morefuelsmod.boredhero.morefuelsmod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import morefuelsmod.boredhero.morefuelsmod.config.MoreFuelsModConfig;
+import morefuelsmod.boredhero.morefuelsmod.config.MFMConfig;
 import morefuelsmod.boredhero.morefuelsmod.fuels.MFMFuelsEventHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -24,7 +24,7 @@ public class MoreFuelsMod {
     public static final String modid = "morefuelsmod";
 
     public MoreFuelsMod() {
-    	ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MoreFuelsModConfig.clientSpec);
+    	ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MFMConfig.clientSpec);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         MinecraftForge.EVENT_BUS.register(this);
