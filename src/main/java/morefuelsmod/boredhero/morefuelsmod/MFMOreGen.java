@@ -71,7 +71,7 @@ public class MFMOreGen {
     //Check for and handle requests for one specific biome or multiple specific biomes	
     if(wantedBiomes.length > 0) {
     	//Loop through biomes in the forge registry (this allows modded biomes too, hypothetically, that's why we don't loop through vanilla biomes only)
-    	if(configSwitch) {
+    	//if(configSwitch) {
     		for(Biome biome : ForgeRegistries.BIOMES.getValues()) {
     		//Use ArrayUtils to see if our Category[] wantedBiomes contains the current biome in the loop, and if so, generate the ore.
     			if(ArrayUtils.contains(wantedBiomes, biome.getCategory())) {
@@ -80,18 +80,18 @@ public class MFMOreGen {
     					MoreFuelsMod.LOGGER.info("MFM: (if) Added an ore: " + wantedBlock + " to biome: " + biome.getCategory());	
     			}
     		}
-    	} 
-    	else if(!configSwitch) {
+    	//} 
+    	//else if(!configSwitch) {
     		//If !configSwitch (i.e. disabled by end user in config file), terminate the loop and return without inserting the ore into any biome.
-    		return;
-    	}
+    	//	return;
+    	//}
   
     }
     
     //Check for and handle requests for generating an ore in all the overworld biomes. This is what happens if you pass in an empty Character[]
     else if(wantedBiomes.length == 0) {
     //This if statement is what allows us to control this ore generation with a config
-    if(configSwitch) {
+    //if(configSwitch) {
     	for(Biome biome : ForgeRegistries.BIOMES.getValues()) {
     		//For any biome that ISN'T the end of the nether, we're going to execute our oregen code
     		if(!(biome.getCategory() == Biome.Category.THEEND || biome.getCategory() == Biome.Category.NETHER)) {
@@ -100,11 +100,11 @@ public class MFMOreGen {
     			MoreFuelsMod.LOGGER.info("MFM: (elif) Added an ore: " + wantedBlock + " to biome: " + biome.getCategory());		
     		}
     	}
-    }
-    else if(!configSwitch) {
+    //}
+    //else if(!configSwitch) {
     	//If !configSwitch (i.e. disabled by end user in config file), terminate the loop and return without inserting the ore into any biome.
-    	return;
-    			}
+    //	return;
+    	//		}
     		}
     	}
 	
