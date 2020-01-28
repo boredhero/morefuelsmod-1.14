@@ -18,7 +18,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(MoreFuelsMod.modid)
 public class MoreFuelsMod {
 
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String version = "1.7.0";
     public static final String mcversion = "1.14.4";
     public static final String modid = "morefuelsmod";

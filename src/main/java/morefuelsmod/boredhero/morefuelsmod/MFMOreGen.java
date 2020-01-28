@@ -23,9 +23,6 @@ import morefuelsmod.boredhero.morefuelsmod.init.MFMBlocks;
 
 public class MFMOreGen {
     
-	//Logging
-	private static final Logger LOGGER = LogManager.getLogger();
-    
 	//Space savers when calling setupOreGenPart2();
 	private static final OreFeatureConfig.FillerBlockType stone = OreFeatureConfig.FillerBlockType.NATURAL_STONE;
 	private static final OreFeatureConfig.FillerBlockType nether = OreFeatureConfig.FillerBlockType.NETHERRACK;
@@ -54,6 +51,7 @@ public class MFMOreGen {
     
     //The first part of my redesigned OreGen class. This just calls another method that does all the work and feeds it what it needs.
     public static void setupOreGenPart1() {
+    	MoreFuelsMod.LOGGER.info("MFM: Calling setupOreGenPart1()...");	
     	//Call setupOreGenPart2 and feed it all the pre-configured data we've set up that it needs.
     	//The syntax is setupOreGenPart2 (static Category[] of Biome.Category.BIOMEs or uninitialized,
     	//OreFeatureConfig.FillerBlockType.BLOCKTYPE (NETHERRACK or NATURAL_STONE)
@@ -72,7 +70,7 @@ public class MFMOreGen {
     //To generate it in the whole overworld, just pass in an empty Category[]
     //To generate it in a specific overworld biome(s), pass a Category[] with those biome(s). Biomes include NETHER and THEEND.
     public static void setupOreGenPart2(Category[] wantedBiomes, OreFeatureConfig.FillerBlockType stoneType, Block wantedBlock, boolean configSwitch, int veinSize, CountRangeConfig cfg) {
-    
+    MoreFuelsMod.LOGGER.info("MFM: Calling setupOreGenPart2()...");
     //Check for and handle requests for one specific biome or multiple specific biomes	
     if(wantedBiomes.length > 0) {
     	//Loop through biomes in the forge registry (this allows modded biomes too, hypothetically, that's why we don't loop through vanilla biomes only)
@@ -82,7 +80,7 @@ public class MFMOreGen {
     			if(ArrayUtils.contains(wantedBiomes, biome.getCategory())) {
     				//This is how we actually add the ore generation to the biome(s)
     					biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize), Placement.COUNT_RANGE, cfg));
-    					LOGGER.info("MFM: Spawned an ore: " + wantedBlock);	
+    					MoreFuelsMod.LOGGER.info("MFM: Spawned an ore: " + wantedBlock);	
     			} //end if(ArrayUtils.contains(wantedBiomes...)
     			} //End for loop
     	} //End if(configSwitch)
@@ -102,7 +100,7 @@ public class MFMOreGen {
     		if(!(biome.getCategory() == Biome.Category.THEEND || biome.getCategory() == Biome.Category.NETHER)) {
     			//This is how we actually add the ore generation to the biome(s)
     			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize), Placement.COUNT_RANGE, cfg));
-    			LOGGER.info("MFM: Spawned an ore: " + wantedBlock);
+    			MoreFuelsMod.LOGGER.info("MFM: Spawned an ore: " + wantedBlock);	
     		}//End if check
     	}// End for loop
     }//End if(configSwitch) check
