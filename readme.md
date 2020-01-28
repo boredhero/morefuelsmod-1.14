@@ -1,6 +1,6 @@
 ![mf-logo](https://raw.githubusercontent.com/boredhero/morefuelsmod-1.14/master/src/main/resources/mf-logo.png)
 # morefuelsmod-1.14
-Super early testing. This is buggy and may not work at all. Use at your own risk.
+This is the active developemnt repo for MFM for Minecraft 1.14.4 v1.7.1+
 
 ### Contributors
 * Noah Martino (personal.boredhero@gmail.com)
