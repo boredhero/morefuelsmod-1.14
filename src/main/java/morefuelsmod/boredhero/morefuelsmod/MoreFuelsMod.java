@@ -59,5 +59,6 @@ public class MoreFuelsMod {
     public void onServerStarting(FMLServerStartingEvent event) {
         // do something when the server starts
         LOGGER.info("Server instance detected. Ditching the clientside.");
+        MFMOreGen.setupOreGenPart1();
     }
 }
