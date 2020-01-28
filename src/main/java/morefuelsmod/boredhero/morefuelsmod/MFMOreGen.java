@@ -78,15 +78,15 @@ public class MFMOreGen {
     				//This is how we actually add the ore generation to the biome(s)
     					biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize), Placement.COUNT_RANGE, cfg));
     					MoreFuelsMod.LOGGER.info("MFM: (if) Added an ore: " + wantedBlock + " to biome: " + biome.getCategory());	
-    			} //end if(ArrayUtils.contains(wantedBiomes...)
-    			} //End for loop
-    	} //End if(configSwitch)
+    			}
+    		}
+    	} 
     	else if(!configSwitch) {
     		//If !configSwitch (i.e. disabled by end user in config file), terminate the loop and return without inserting the ore into any biome.
     		return;
-    	}//End else if(!configSwitch)
+    	}
   
-    } //End check for length > 0
+    }
     
     //Check for and handle requests for generating an ore in all the overworld biomes. This is what happens if you pass in an empty Character[]
     else if(wantedBiomes.length == 0) {
@@ -98,14 +98,14 @@ public class MFMOreGen {
     			//This is how we actually add the ore generation to the biome(s)
     			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize), Placement.COUNT_RANGE, cfg));
     			MoreFuelsMod.LOGGER.info("MFM: (elif) Added an ore: " + wantedBlock + " to biome: " + biome.getCategory());		
-    		}//End if check
-    	}// End for loop
-    }//End if(configSwitch) check
+    		}
+    	}
+    }
     else if(!configSwitch) {
     	//If !configSwitch (i.e. disabled by end user in config file), terminate the loop and return without inserting the ore into any biome.
     	return;
-    }
-    }//End else if
-    }//End setup oreGenPart2
+    			}
+    		}
+    	}
 	
-} // END OF MFMOREGEN.JAVA
+}
