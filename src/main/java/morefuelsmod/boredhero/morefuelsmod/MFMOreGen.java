@@ -1,6 +1,8 @@
 package morefuelsmod.boredhero.morefuelsmod;
 
 import org.apache.commons.lang3.ArrayUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import net.minecraft.block.Block;
 import net.minecraft.world.biome.Biome;
@@ -21,6 +23,8 @@ import morefuelsmod.boredhero.morefuelsmod.init.MFMBlocks;
 
 public class MFMOreGen {
     
+	//Logging
+	private static final Logger LOGGER = LogManager.getLogger();
     
 	//Space savers when calling setupOreGenPart2();
 	private static final OreFeatureConfig.FillerBlockType stone = OreFeatureConfig.FillerBlockType.NATURAL_STONE;
@@ -78,7 +82,8 @@ public class MFMOreGen {
     			if(ArrayUtils.contains(wantedBiomes, biome.getCategory())) {
     				//This is how we actually add the ore generation to the biome(s)
     					biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize), Placement.COUNT_RANGE, cfg));
-    				} //end if(ArrayUtils.contains(wantedBiomes...)
+    					LOGGER.info("MFM: Spawned an ore: " + wantedBlock);	
+    			} //end if(ArrayUtils.contains(wantedBiomes...)
     			} //End for loop
     	} //End if(configSwitch)
     	else if(!configSwitch) {
@@ -97,6 +102,7 @@ public class MFMOreGen {
     		if(!(biome.getCategory() == Biome.Category.THEEND || biome.getCategory() == Biome.Category.NETHER)) {
     			//This is how we actually add the ore generation to the biome(s)
     			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize), Placement.COUNT_RANGE, cfg));
+    			LOGGER.info("MFM: Spawned an ore: " + wantedBlock);
     		}//End if check
     	}// End for loop
     }//End if(configSwitch) check
