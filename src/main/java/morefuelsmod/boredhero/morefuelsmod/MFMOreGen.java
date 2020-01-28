@@ -77,7 +77,7 @@ public class MFMOreGen {
     			if(ArrayUtils.contains(wantedBiomes, biome.getCategory())) {
     				//This is how we actually add the ore generation to the biome(s)
     					biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize), Placement.COUNT_RANGE, cfg));
-    					MoreFuelsMod.LOGGER.info("MFM: Spawned an ore: " + wantedBlock);	
+    					MoreFuelsMod.LOGGER.info("MFM: (if) Added an ore: " + wantedBlock + " to biome: " + biome.getCategory());	
     			} //end if(ArrayUtils.contains(wantedBiomes...)
     			} //End for loop
     	} //End if(configSwitch)
@@ -97,7 +97,7 @@ public class MFMOreGen {
     		if(!(biome.getCategory() == Biome.Category.THEEND || biome.getCategory() == Biome.Category.NETHER)) {
     			//This is how we actually add the ore generation to the biome(s)
     			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize), Placement.COUNT_RANGE, cfg));
-    			MoreFuelsMod.LOGGER.info("MFM: Spawned an ore: " + wantedBlock);	
+    			MoreFuelsMod.LOGGER.info("MFM: (elif) Added an ore: " + wantedBlock + " to biome: " + biome.getCategory());		
     		}//End if check
     	}// End for loop
     }//End if(configSwitch) check
