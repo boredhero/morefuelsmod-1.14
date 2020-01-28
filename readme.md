@@ -61,15 +61,7 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 
 ## TODO:
 
-* Implement a rich fully featured config
-* Implement block/item crafting recipies
-	* Mostly done now.
-* Investigate support Forge 1.14.2 and 1.14.3 with one jar
-	* This may be a little more complicated because of the mods.toml format. Not sure if it'll allow but should try
-* Investigate server crashing on startup. Proxy necessary? Sided annotations?
-* Make a stripped down version and release as More Fuels Mod Light
-	* Try to do this as a branch on this GitHub repo for better organization going forward
-* Adjust build.gradle to include a sources jar in the build folder when building
+* Launch Release Build v1.7.0 on all channels.
 
 ## PUSH TO v1.7.1
 * Look into combining all of the dried plant smelting json files into one ala [this method](https://github.com/skylinerw/guides/blob/master/java/recipes.md#smelting-ingredient)
@@ -78,6 +70,12 @@ Super early testing. This is buggy and may not work at all. Use at your own risk
 	* Maayyyybeeeeee GUI config...will still probably push that to v1.8.0
 	* Allow RFtL disable from config.
 		* Unsure how to control JSONs from config code....
+	* Fix the bug currently preventing the config for ore spawning from working
+* Adjust build.gradle to include a sources jar in the build folder when building
+* Make a stripped down version and release as More Fuels Mod Light
+	* Try to do this as a branch on this GitHub repo for better organization going forward.
+* Investigate supporting Forge 1.14.2 and 1.14.3 as one jar
+	* This may be a little more complicated now because of the mods.toml format. Not sure if it'll allow this at all.
 
 ## PUSH TO v1.8.0
 * Make chorus and purpur flammable using rEfLeCtIoN (or Block Properties??)
