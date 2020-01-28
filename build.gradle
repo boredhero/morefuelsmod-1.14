@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.7.0'
+version = 'v1.7.0'
 group = 'morefuelsmod.bored.morefuelsmod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'morefuelsmod'
 
