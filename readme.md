@@ -45,7 +45,7 @@ This is the active developemnt repo for MoreFuelsMod for Minecraft 1.14.4 and On
 #### Basic Instructions:
 * ```cd``` into morefuelsmod directory
 * run command: ```gradlew build``` or ```./gradlew build``` (Linux/Mac)
-* jar file will be in /morefuelsmod-1.14/build/libs/
+* jar file will be in /morefuelsmod/build/libs/
 
 #### Advanced:
 * jar filename is set to modid-minecraftversion-version.jar
