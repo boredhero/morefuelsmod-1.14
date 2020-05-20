@@ -12,9 +12,9 @@
       "args": "",
       "env": {
         "MOD_CLASSES": "morefuelsmod%%${workspaceFolder}/bin/main:morefuelsmod%%${workspaceFolder}/bin/main",
-        "MCP_MAPPINGS": "snapshot_20190719-1.14.3",
+        "MCP_MAPPINGS": "snapshot_20200119-1.14.4",
         "MCP_VERSION": "20190829.143755",
-        "FORGE_VERSION": "28.1.116",
+        "FORGE_VERSION": "28.2.16",
         "assetIndex": "1.14",
         "assetDirectory": "/home/noah/.gradle/caches/forge_gradle/assets",
         "nativesDirectory": "${workspaceFolder}/build/natives",
@@ -34,9 +34,9 @@
       "args": "--mod morefuelsmod --all --output /home/noah/code/morefuelsmod/src/generated/resources",
       "env": {
         "MOD_CLASSES": "morefuelsmod%%${workspaceFolder}/bin/main:morefuelsmod%%${workspaceFolder}/bin/main",
-        "MCP_MAPPINGS": "snapshot_20190719-1.14.3",
+        "MCP_MAPPINGS": "snapshot_20200119-1.14.4",
         "MCP_VERSION": "20190829.143755",
-        "FORGE_VERSION": "28.1.116",
+        "FORGE_VERSION": "28.2.16",
         "FORGE_GROUP": "net.minecraftforge",
         "target": "fmluserdevdata",
         "MC_VERSION": "1.14.4"
@@ -53,9 +53,9 @@
       "args": "",
       "env": {
         "MOD_CLASSES": "morefuelsmod%%${workspaceFolder}/bin/main:morefuelsmod%%${workspaceFolder}/bin/main",
-        "MCP_MAPPINGS": "snapshot_20190719-1.14.3",
+        "MCP_MAPPINGS": "snapshot_20200119-1.14.4",
         "MCP_VERSION": "20190829.143755",
-        "FORGE_VERSION": "28.1.116",
+        "FORGE_VERSION": "28.2.16",
         "FORGE_GROUP": "net.minecraftforge",
         "target": "fmluserdevserver",
         "MC_VERSION": "1.14.4"
