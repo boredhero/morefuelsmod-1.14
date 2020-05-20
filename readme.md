@@ -30,7 +30,7 @@ This is the active developemnt repo for MoreFuelsMod for Minecraft 1.14.4 and On
 
 #### IntelliJ IDEA
 * run command: ```gradlew idea``` or ```./gradlew idea``` (Linux/Mac)
-* run command: ```gradlew genIntellijRuns``` or ```./gradlew genIntellijRuns
+* run command: ```gradlew genIntellijRuns``` or ```./gradlew genIntellijRuns```
 * Import to IntelliJ IDEA
 
 #### VSCode
