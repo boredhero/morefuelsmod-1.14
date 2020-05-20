@@ -14,9 +14,9 @@ issueTrackerURL="https://github.com/boredhero/morefuelsmod-1.14/issues" #optiona
 # The modid of the mod
 modId="morefuelsmod" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
-version="1.7.1" #mandatory
+version="§4§l1.7.1§r" #mandatory
  # A display name for the mod
-displayName="More Fuels Mod" #mandatory
+displayName="§4§lMore Fuels Mod§r" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
 # updateJSONURL="http://myurl.me/" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
@@ -24,12 +24,12 @@ displayURL="https://www.curseforge.com/minecraft/mc-mods/more-fuels-mod" #option
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="mf-logo.png" #optional
 # A text field displayed in the mod UI
-credits="Cadiboo's Modding Tutorial, The Forge Folks, the Mojang Folks" #optional
+# credits="Cadiboo's Modding Tutorial, The Forge Folks, the Mojang Folks" #optional
 # A text field displayed in the mod UI
-authors="Noah Martino" #optional
+authors="§4Noah Martino A.K.A boredhero§r" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-§4§oThe Premiere Mod that makes more items usable as fuel as well as adding fun fuel storage items and blocks. §lNow Officially Updated to Minecraft 1.14.
+§4§oThe Premiere Mod that makes more items usable as fuel as well as adding fun fuel storage items and blocks. §lNow Officially Updated to Minecraft 1.14.4§r
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.morefuelsmod]] #optional

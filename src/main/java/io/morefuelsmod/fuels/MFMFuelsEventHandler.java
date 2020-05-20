@@ -6,6 +6,7 @@ import java.util.List;
 
 import io.morefuelsmod.item.ModItems;
 import io.morefuelsmod.block.ModBlocks;
+import io.morefuelsmod.config.MFMConfig;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -86,29 +87,25 @@ public class MFMFuelsEventHandler {
 				Items.MOJANG_BANNER_PATTERN, Items.SKULL_BANNER_PATTERN);
 		//First off, lets fix Mojang's own shit for them...
 		//All timings are in ticks. 20t = 1 second. See fuels.md for mor details.
-		final int planks = 75, slabs = 38, sticks = 38, bowl = 56,
-				wood_door = 150, boat = 375, scaffolding = 325,
-				wood_fence = 125, wood_stairs = 113, wood_trapdoor = 450,
-				cartography_table = 580, loom = 200, bookshelf = 1710,
-				lectern = 1860, composter = 263, chest = 600, trapped_chest = 656,
-				barrel = 525, daylight_detector = 113, jukebox = 600, note_block = 600,
-				banner = 638, bow = 188, fishing_rod = 163, ladder = 88, wooden_button = 75,
-				wooden_pickaxe = 300, wooden_shovel = 150, wooden_hoe = 225, wooden_axe = 300,
-				wooden_sword = 188, wooden_sign = 163, carpet = 67, block_of_coal = 14400, 
+		final int planks = MFMConfig.planks, slabs = MFMConfig.slabs, sticks = MFMConfig.sticks, bowl = MFMConfig.bowl, wood_door = MFMConfig.wood_door, boat = MFMConfig.boat, 
+		scaffolding = MFMConfig.scaffolding, wood_fence = MFMConfig.wood_fence, wood_stairs = MFMConfig.wood_stairs, wood_trapdoor = MFMConfig.wood_trapdoor,
+		cartography_table = MFMConfig.cartography_table, loom = MFMConfig.loom, bookshelf = MFMConfig.bookshelf, lectern = MFMConfig.lectern, composter = MFMConfig.composter,
+		chest = MFMConfig.chest, trapped_chest = MFMConfig.trapped_chest, barrel = MFMConfig.barrel, daylight_detector = MFMConfig.daylight_detector, jukebox = MFMConfig.jukebox,
+		note_block = MFMConfig.note_block, banner = MFMConfig.banner, bow = MFMConfig.bow, fishing_rod = MFMConfig.fishing_rod, ladder = MFMConfig.ladder, wooden_button = MFMConfig.ladder,
+		wooden_pickaxe = MFMConfig.wooden_pickaxe, wooden_shovel = MFMConfig.wooden_shovel, wooden_hoe = MFMConfig.wooden_hoe, wooden_axe = MFMConfig.wooden_axe, 
+		wooden_sword = MFMConfig.wooden_sword, wooden_sign = MFMConfig.wooden_sign, carpet = MFMConfig.carpet, block_of_coal = MFMConfig.block_of_coal, 
 		//Now lets get onto adding new items as fuel
-				leaves = 75, tripwire_hook = 56, dry_sponge = 140, piston = 225, cobweb = 25,
-				torch = 410, redstone_torch = 38, chorus = 300, purpur_block_pillar = 300,
-				purpur_slab = 150, purpur_stairs = 450, end_rod = 675, lever = 38,
-				mushroom_block = 300, string = 25, feather = 25, painting = 400, paper = 140,
-				books = 420, minecart_with_chest = 600, bed = 525, dried_kelp = 444, 
-				blaze_powder = 1200, item_frame = 300, map = 1200, carrot_on_a_stick = 163,
-				armor_stand = 225, shield = 450, banner_pattern = 140, campfire = 2613,
+		leaves = MFMConfig.leaves, tripwire_hook = MFMConfig.tripwire_hook, dry_sponge = MFMConfig.dry_sponge, piston = MFMConfig.piston, cobweb = MFMConfig.cobweb, torch = MFMConfig.torch,
+		redstone_torch = MFMConfig.redstone_torch, chorus = MFMConfig.chorus, purpur_block_pillar = MFMConfig.purpur_block_pillar, purpur_slab = MFMConfig.purpur_slab, 
+		purpur_stairs = MFMConfig.purpur_stairs, end_rod = MFMConfig.end_rod, lever = MFMConfig.lever, mushroom_block = MFMConfig.mushroom_block, string = MFMConfig.string, 
+		feather = MFMConfig.feather, painting = MFMConfig.painting, paper = MFMConfig.paper, books = MFMConfig.books, minecart_with_chest = MFMConfig.minecart_with_chest, bed = MFMConfig.bed,
+		dried_kelp = MFMConfig.dried_kelp, blaze_powder = MFMConfig.dried_kelp, item_frame = MFMConfig.item_frame, map = MFMConfig.map, carrot_on_a_stick = MFMConfig.carrot_on_a_stick,
+		armor_stand = MFMConfig.armor_stand, shield = MFMConfig.shield, banner_pattern = MFMConfig.banner_pattern, campfire = MFMConfig.campfire,
 		//And lastly...modded fuel items...
-				dried_plant = 140, dried_plant_block = 1260, bituminous_coal = 1600,
-				bituminous_coal_block = 14400, coke = 3200, coke_block = 28800,
-				lava_orb = 20000, can_of_slimoline = 20000, coal_dust = 1600,
-				infinite_creative_fuel = 63072000; /*Two years in real time!*/
-		
+		dried_plant = MFMConfig.dried_plant, dried_plant_block = MFMConfig.dried_plant_block, bituminous_coal = MFMConfig.bituminous_coal, bituminous_coal_block = MFMConfig.bituminous_coal_block,
+		coke = MFMConfig.coke, coke_block = MFMConfig.coke_block, lava_orb = MFMConfig.lava_orb, can_of_slimoline = MFMConfig.can_of_slimoline, coal_dust = MFMConfig.coal_dust,
+		infinite_creative_fuel = MFMConfig.infinite_creative_fuel;
+
 		if(fuel == ModItems.DRIED_PLANT.get())
 			event.setBurnTime(dried_plant);
 		else if(fuel == ModBlocks.BLOCK_DRIED_PLANT.get().asItem())
@@ -129,133 +126,133 @@ public class MFMFuelsEventHandler {
 			event.setBurnTime(coal_dust);
 		else if(fuel == ModBlocks.BLOCK_CREATIVE_INFINITE_FUEL.get().asItem())
 			event.setBurnTime(infinite_creative_fuel);
-		else if(planksList.contains(fuel))
+		else if(planksList.contains(fuel) && MFMConfig.enablePlanksTweak)
 			event.setBurnTime(planks);
-		else if(slabsList.contains(fuel))
+		else if(slabsList.contains(fuel) && MFMConfig.enableSlabsTweak)
 			event.setBurnTime(slabs);
-		else if(mushroomBlockList.contains(fuel))
+		else if(mushroomBlockList.contains(fuel) && MFMConfig.enableMushroomBlockTweak)
 			event.setBurnTime(mushroom_block);
-		else if(bedList.contains(fuel))
+		else if(bedList.contains(fuel) && MFMConfig.enableBedFuel)
 			event.setBurnTime(bed);
-		else if(leavesList.contains(fuel))
+		else if(leavesList.contains(fuel) && MFMConfig.enableLeavesFuel)
 			event.setBurnTime(leaves);
-		else if(signList.contains(fuel))
+		else if(signList.contains(fuel) && MFMConfig.enableWoodSignTweak)
 			event.setBurnTime(wooden_sign);
-		else if(buttonList.contains(fuel))
+		else if(buttonList.contains(fuel) && MFMConfig.enableWoodButtonTweak)
 			event.setBurnTime(wooden_button);
-		else if(fenceList.contains(fuel))
+		else if(fenceList.contains(fuel) && MFMConfig.enableWoodFenceTweak)
 			event.setBurnTime(wood_fence);
-		else if(stairsList.contains(fuel))
+		else if(stairsList.contains(fuel) && MFMConfig.enableWoodStairsTweak)
 			event.setBurnTime(wood_stairs);
-		else if(trapdoorsList.contains(fuel))
+		else if(trapdoorsList.contains(fuel) && MFMConfig.enableWoodTrapdoorTweak)
 			event.setBurnTime(wood_trapdoor);
-		else if(doorsList.contains(fuel))
+		else if(doorsList.contains(fuel) && MFMConfig.enableWoodDoorTweak)
 			event.setBurnTime(wood_door);
-		else if(boatsList.contains(fuel))
+		else if(boatsList.contains(fuel) && MFMConfig.enableBoatTweak)
 			event.setBurnTime(boat);
-		else if(fuel == Items.STICK)
+		else if(fuel == Items.STICK && MFMConfig.enableStickTweak)
 			event.setBurnTime(sticks);
-		else if(fuel == Items.STRING)
+		else if(fuel == Items.STRING && MFMConfig.enableStringFuel)
 			event.setBurnTime(string);
-		else if(fuel == Items.FEATHER)
+		else if(fuel == Items.FEATHER && MFMConfig.enableFeatherFuel)
 			event.setBurnTime(feather);
-		else if(fuel == Items.PAINTING)
+		else if(fuel == Items.PAINTING && MFMConfig.enablePaintingFuel)
 			event.setBurnTime(painting);
-		else if(fuel == Items.PAPER)
+		else if(fuel == Items.PAPER && MFMConfig.enablePaperFuel)
 			event.setBurnTime(paper);
-		else if(booksList.contains(fuel))
+		else if(booksList.contains(fuel) && MFMConfig.enableBooksFuel)
 			event.setBurnTime(books);
-		else if(fuel== Items.BOWL)
+		else if(fuel== Items.BOWL && MFMConfig.enableBowlTweak)
 			event.setBurnTime(bowl);
-		else if(fuel == Items.ARMOR_STAND)
+		else if(fuel == Items.ARMOR_STAND && MFMConfig.enableArmorStandFuel)
 			event.setBurnTime(armor_stand);
-		else if(fuel == Items.SHIELD)
+		else if(fuel == Items.SHIELD && MFMConfig.enableShieldFuel)
 			event.setBurnTime(shield);
-		else if(fuel == Items.CAMPFIRE)
+		else if(fuel == Items.CAMPFIRE && MFMConfig.enableCampfireFuel)
 			event.setBurnTime(campfire);
-		else if(fuel == Items.COAL_BLOCK)
+		else if(fuel == Items.COAL_BLOCK && MFMConfig.enableCoalBlockTweak)
 			event.setBurnTime(block_of_coal);
-		else if(fuel == Items.ITEM_FRAME)
+		else if(fuel == Items.ITEM_FRAME && MFMConfig.enableItemFrameFuel)
 			event.setBurnTime(item_frame);
-		else if(fuel == Items.SCAFFOLDING)
+		else if(fuel == Items.SCAFFOLDING && MFMConfig.enableScaffoldingTweak)
 			event.setBurnTime(scaffolding);
-		else if(fuel == Items.CARTOGRAPHY_TABLE)
+		else if(fuel == Items.CARTOGRAPHY_TABLE && MFMConfig.enableCartographyTableTweak)
 			event.setBurnTime(cartography_table);
-		else if(fuel == Items.LOOM)
+		else if(fuel == Items.LOOM && MFMConfig.enableLoomTweak)
 			event.setBurnTime(loom);
-		else if(fuel == Items.BOOKSHELF)
+		else if(fuel == Items.BOOKSHELF && MFMConfig.enableBookshelfTweak)
 			event.setBurnTime(bookshelf);
-		else if(fuel == Items.LECTERN)
+		else if(fuel == Items.LECTERN && MFMConfig.enableLecternTweak)
 			event.setBurnTime(lectern);
-		else if(fuel == Items.COMPOSTER)
+		else if(fuel == Items.COMPOSTER && MFMConfig.enableComposterTweak)
 			event.setBurnTime(composter);
-		else if(fuel == Items.CHEST)
+		else if(fuel == Items.CHEST && MFMConfig.enableChestTweak)
 			event.setBurnTime(chest);
-		else if(fuel == Items.TRAPPED_CHEST)
+		else if(fuel == Items.TRAPPED_CHEST && MFMConfig.enableTrappedChestTweak)
 			event.setBurnTime(trapped_chest);
-		else if(fuel == Items.CHEST_MINECART)
+		else if(fuel == Items.CHEST_MINECART && MFMConfig.enableChestMinecartFuel)
 			event.setBurnTime(minecart_with_chest);
-		else if(fuel == Items.BARREL)
+		else if(fuel == Items.BARREL && MFMConfig.enableBarrelTweak)
 			event.setBurnTime(barrel);
-		else if(fuel == Items.DRIED_KELP)
+		else if(fuel == Items.DRIED_KELP && MFMConfig.enableDriedKelpItemFuel)
 			event.setBurnTime(dried_kelp);
-		else if(fuel == Items.DAYLIGHT_DETECTOR)
+		else if(fuel == Items.DAYLIGHT_DETECTOR && MFMConfig.enableDaylightDetectorFuel)
 			event.setBurnTime(daylight_detector);
-		else if(fuel == Items.JUKEBOX)
+		else if(fuel == Items.JUKEBOX && MFMConfig.enableJukeboxTweak)
 			event.setBurnTime(jukebox);
-		else if(fuel == Items.NOTE_BLOCK)
+		else if(fuel == Items.NOTE_BLOCK && MFMConfig.enableNoteBlockTweak)
 			event.setBurnTime(note_block);
-		else if(fuel == Items.BOW)
+		else if(fuel == Items.BOW && MFMConfig.enableBowTweak)
 			event.setBurnTime(bow);
-		else if(fuel == Items.LEVER)
+		else if(fuel == Items.LEVER && MFMConfig.enableLeverFuel)
 			event.setBurnTime(lever);
-		else if(fuel == Items.FISHING_ROD)
+		else if(fuel == Items.FISHING_ROD && MFMConfig.enableFishingRodTweak)
 			event.setBurnTime(fishing_rod);
-		else if(fuel == Items.CARROT_ON_A_STICK)
+		else if(fuel == Items.CARROT_ON_A_STICK && MFMConfig.enableCarrotOnAStickFuel)
 			event.setBurnTime(carrot_on_a_stick);
-		else if(fuel == Items.LADDER)
+		else if(fuel == Items.LADDER && MFMConfig.enableLadderTweak)
 			event.setBurnTime(ladder);
-		else if(fuel == Items.WOODEN_PICKAXE)
+		else if(fuel == Items.WOODEN_PICKAXE && MFMConfig.enableWoodenPickaxeTweak)
 			event.setBurnTime(wooden_pickaxe);
-		else if(fuel == Items.WOODEN_HOE)
+		else if(fuel == Items.WOODEN_HOE && MFMConfig.enableWoodenHoeTweak)
 			event.setBurnTime(wooden_hoe);
-		else if(fuel == Items.WOODEN_AXE)
+		else if(fuel == Items.WOODEN_AXE &&MFMConfig.enableWoodenAxeTweak)
 			event.setBurnTime(wooden_axe);
-		else if(fuel == Items.WOODEN_SHOVEL)
+		else if(fuel == Items.WOODEN_SHOVEL && MFMConfig.enableWoodenShovelTweak)
 			event.setBurnTime(wooden_shovel);
-		else if(fuel == Items.WOODEN_SWORD)
+		else if(fuel == Items.WOODEN_SWORD && MFMConfig.enableWoodenSwordTweak)
 			event.setBurnTime(wooden_sword);
-		else if(fuel == Items.TRIPWIRE_HOOK)
+		else if(fuel == Items.TRIPWIRE_HOOK && MFMConfig.enableTripwireHookFuel)
 			event.setBurnTime(tripwire_hook);
-		else if(fuel == Items.SPONGE)
+		else if(fuel == Items.SPONGE && MFMConfig.enableSpongeFuel)
 			event.setBurnTime(dry_sponge);
-		else if(fuel == Items.COBWEB)
+		else if(fuel == Items.COBWEB && MFMConfig.enableCobwebFuel)
 			event.setBurnTime(cobweb);
-		else if(fuel == Items.TORCH)
+		else if(fuel == Items.TORCH && MFMConfig.enableTorchFuel)
 			event.setBurnTime(torch);
-		else if(fuel == Items.REDSTONE_TORCH)
+		else if(fuel == Items.REDSTONE_TORCH && MFMConfig.enableRedstoneTorchFuel)
 			event.setBurnTime(redstone_torch);
-		else if(fuel == Items.PURPUR_SLAB)
+		else if(fuel == Items.PURPUR_SLAB && MFMConfig.enablePurpurSlabFuel)
 			event.setBurnTime(purpur_slab);
-		else if(fuel == Items.PURPUR_STAIRS)
+		else if(fuel == Items.PURPUR_STAIRS && MFMConfig.enablePurpurStairsFuel)
 			event.setBurnTime(purpur_stairs);
-		else if(fuel == Items.END_ROD)
+		else if(fuel == Items.END_ROD && MFMConfig.enableEndRodFuel)
 			event.setBurnTime(end_rod);
-		else if(fuel == Items.BLAZE_POWDER)
+		else if(fuel == Items.BLAZE_POWDER && MFMConfig.enableBlazePowderFuel)
 			event.setBurnTime(blaze_powder);
-		else if(mapsList.contains(fuel))
+		else if(mapsList.contains(fuel) && MFMConfig.enableMapsFuels)
 			event.setBurnTime(map);
-		else if(purpurBlockPillarList.contains(fuel))
+		else if(purpurBlockPillarList.contains(fuel) && MFMConfig.enablePurpurBlocksFuel)
 			event.setBurnTime(purpur_block_pillar);
-		else if(bannerPatternList.contains(fuel))
+		else if(bannerPatternList.contains(fuel) && MFMConfig.enableBannerPatternFuels)
 			event.setBurnTime(banner_pattern);
-		else if(chorusList.contains(fuel))
+		else if(chorusList.contains(fuel) && MFMConfig.enableChorusItemsFuel)
 			event.setBurnTime(chorus);
-		else if(pistonList.contains(fuel))
+		else if(pistonList.contains(fuel) && MFMConfig.enablePistonFuels)
 			event.setBurnTime(piston);
-		else if(bannerList.contains(fuel))
+		else if(bannerList.contains(fuel) && MFMConfig.enableBannerTweak)
 			event.setBurnTime(banner);
-		else if(carpetList.contains(fuel))
+		else if(carpetList.contains(fuel) && MFMConfig.enableCarpetTweak)
 			event.setBurnTime(carpet);
 		
 	}
