@@ -21,6 +21,16 @@ import io.morefuelsmod.config.MFMConfig;
 //TODO: In 1.7.1, overhaul the config system so that it works. Until then, config is disabled.
 
 public class MFMOreGen {
+	//These should pull from the config...
+	private static boolean enableBituminousGeneration = MFMConfig.enableBituminousGeneration;
+	private static boolean enableLavaOreNetherGeneration = MFMConfig.enableLavaOreNetherGeneration;
+	private static boolean enableLavaOreOverworldGeneration = MFMConfig.enableLavaOreOverworldGeneration;
+
+	public static void fuckingFuckEverythingFUCK(){
+		MoreFuelsMod.LOGGER.info("OreGen: enableBituminousGeneration = " + enableBituminousGeneration);
+		MoreFuelsMod.LOGGER.info("OreGen: enableLavaOreNetherGeneration = " + enableLavaOreNetherGeneration);
+		MoreFuelsMod.LOGGER.info("OreGen: enableLavaOreOverworldGeneration = " + enableLavaOreOverworldGeneration);
+	}
     
 	//Space savers when calling setupOreGenPart2();
 	private static final OreFeatureConfig.FillerBlockType stone = OreFeatureConfig.FillerBlockType.NATURAL_STONE;
@@ -52,9 +62,9 @@ public class MFMOreGen {
     	//A boolean that you can check with your config, or just hard code send it a false to avoid that step
     	//A vein size integer
     	//A CountRangeConfig object with the Veins Per Chunk, MinHeight, MaxHeightBase (should be 0), and MaxHeight
-    	setupOreGenPart2(netherBiome, nether, ModBlocks.BLOCK_LAVA_ORE.get(), MFMConfig.enableLavaOreNetherGeneration, lavaOreVeinSize, lavaOreCfg);
-    	setupOreGenPart2(allOverworldBiomes, stone, ModBlocks.BLOCK_BITUMINOUS_COAL_ORE.get(), MFMConfig.enableBituminousGeneration, bituminousVeinSize, bituminousCfg);
-    	setupOreGenPart2(allOverworldBiomes, stone, ModBlocks.BLOCK_LAVA_ORE.get(), MFMConfig.enableLavaOreOverworldGeneration, lavaOreVeinSize, lavaOreOverworldCfg);
+    	setupOreGenPart2(netherBiome, nether, ModBlocks.BLOCK_LAVA_ORE.get(), enableLavaOreNetherGeneration, lavaOreVeinSize, lavaOreCfg, "enableLavaOreNetherGeneration");
+    	setupOreGenPart2(allOverworldBiomes, stone, ModBlocks.BLOCK_BITUMINOUS_COAL_ORE.get(), enableBituminousGeneration, bituminousVeinSize, bituminousCfg, "enableBituminousGeneration");
+    	setupOreGenPart2(allOverworldBiomes, stone, ModBlocks.BLOCK_LAVA_ORE.get(), enableLavaOreOverworldGeneration, lavaOreVeinSize, lavaOreOverworldCfg, "enableLavaOreOverworldGeneration");
     }
     
     //This baby does all the hard work.
@@ -63,12 +73,13 @@ public class MFMOreGen {
     //It's only flaw is that you cannot easily have it generate an ore in all biomes. If you wanted that, you could add an extra boolean for it and set up another if else that doesn't exclude NETHER and THEEND from the catchall.
     //To generate it in the whole overworld, just pass in an empty Category[]
     //To generate it in a specific overworld biome(s), pass a Category[] with those biome(s). Biomes include NETHER and THEEND.
-    public static void setupOreGenPart2(Category[] wantedBiomes, OreFeatureConfig.FillerBlockType stoneType, Block wantedBlock, boolean configSwitch, int veinSize, CountRangeConfig cfg) {
+    public static void setupOreGenPart2(Category[] wantedBiomes, OreFeatureConfig.FillerBlockType stoneType, Block wantedBlock, boolean configSwitch, int veinSize, CountRangeConfig cfg, String configSwitchName) {
     MoreFuelsMod.LOGGER.info("MFM: Calling setupOreGenPart2()...");
     //Check for and handle requests for one specific biome or multiple specific biomes	
     if(wantedBiomes.length > 0) {
     	//Loop through biomes in the forge registry (this allows modded biomes too, hypothetically, that's why we don't loop through vanilla biomes only)
-    	//if(configSwitch) {
+		if(configSwitch == true){
+			MoreFuelsMod.LOGGER.info("OreGen: Generating: " + configSwitchName + " = true");
     		for(Biome biome : ForgeRegistries.BIOMES.getValues()) {
     		//Use ArrayUtils to see if our Category[] wantedBiomes contains the current biome in the loop, and if so, generate the ore.
     			if(ArrayUtils.contains(wantedBiomes, biome.getCategory())) {
@@ -77,18 +88,20 @@ public class MFMOreGen {
     					MoreFuelsMod.LOGGER.info("MFM: (if) Added an ore: " + wantedBlock + " to biome: " + biome.getCategory());	
     			}
     		}
-    	//} 
-    	//else if(!configSwitch) {
-    		//If !configSwitch (i.e. disabled by end user in config file), terminate the loop and return without inserting the ore into any biome.
-    		//return;
-    	//}
+    	} 
+    	else if(configSwitch == false) {
+			//If !configSwitch (i.e. disabled by end user in config file), terminate the loop and return without inserting the ore into any biome.]
+			MoreFuelsMod.LOGGER.info("OreGen: Skipping generation because " + configSwitchName + " = false");
+    		return;
+    	}
   
     }
     
     //Check for and handle requests for generating an ore in all the overworld biomes. This is what happens if you pass in an empty Character[]
     else if(wantedBiomes.length == 0) {
     //This if statement is what allows us to control this ore generation with a config
-    //if(configSwitch) {
+    if(configSwitch == true) {
+		MoreFuelsMod.LOGGER.info("OreGen: Generating: " + configSwitchName + " = true");
     	for(Biome biome : ForgeRegistries.BIOMES.getValues()) {
     		//For any biome that ISN'T the end of the nether, we're going to execute our oregen code
     		if(!(biome.getCategory() == Biome.Category.THEEND || biome.getCategory() == Biome.Category.NETHER)) {
@@ -97,11 +110,12 @@ public class MFMOreGen {
     			MoreFuelsMod.LOGGER.info("MFM: (elif) Added an ore: " + wantedBlock + " to biome: " + biome.getCategory());		
     		}
     	}
-    //}
-    //else if(!configSwitch) {
+    }
+    else if(configSwitch == false) {
     	//If !configSwitch (i.e. disabled by end user in config file), terminate the loop and return without inserting the ore into any biome.
-    	//return;
-    			//}
+		MoreFuelsMod.LOGGER.info("OreGen: Skipping generation because " + configSwitchName + " = false");
+		return;
+    			}
     		}
     	}
 	

@@ -41,17 +41,17 @@ public class MFMConfig {
             builder.push("worldgen");
         	
             enableBituminousGeneration = builder
-                    .comment("Enable Bituminous Coal Ore Generation: THIS IS CURRENTLY BROKEN, SORRY")
+                    .comment("Enable Bituminous Coal Ore Generation:")
                     .translation(Defines.MODID + ".config." + "enableBituminousGeneration")
                     .define("enableBituminousGeneration", true);
             
             enableLavaOreNetherGeneration = builder
-                    .comment("Enable Lava Ore Genereation in the Nether: THIS IS CURRENTLY BROKEN, SORRY")
+                    .comment("Enable Lava Ore Genereation in the Nether:")
                     .translation(Defines.MODID + ".config." + "enableLaveOreNetherGeneration")
                     .define("enableLavaOreNetherGeneration", true);
             
             enableLavaOreOverworldGeneration = builder
-            		.comment("Enable Lava Ore Generation in the Overworld: THIS IS CURRENTLY BROKEN, SORRY")
+            		.comment("Enable Lava Ore Generation in the Overworld:")
             		.translation(Defines.MODID + ".config." + "enableLavaOreOverworldGeneration")
                     .define("enableLavaOreOverworldGeneration", true);
 
