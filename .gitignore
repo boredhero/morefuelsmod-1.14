@@ -10,3 +10,7 @@
 /.settings/*
 /.gradle/*
 /.gradle/
+/.idea/*
+/.vscode/*
+/.eclipse/*
+
