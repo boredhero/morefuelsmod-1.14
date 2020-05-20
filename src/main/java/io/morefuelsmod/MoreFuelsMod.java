@@ -27,7 +27,7 @@ public class MoreFuelsMod {
     public static final String mcversion = "1.14.4";
 
     public MoreFuelsMod() {
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MFMConfig.clientSpec);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MFMConfig.COMMON_SPEC);
         RegistryHandler.registerDeferred(FMLJavaModLoadingContext.get().getModEventBus());
         MFMLogger.init(LogManager.getLogger());
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
@@ -46,7 +46,6 @@ public class MoreFuelsMod {
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event){
-
     }
 
     private void processIMC(final InterModProcessEvent event){

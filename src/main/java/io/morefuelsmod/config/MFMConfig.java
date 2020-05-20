@@ -5,7 +5,6 @@ package io.morefuelsmod.config;
  * Source: https://gist.github.com/Cadiboo/f0a2d9c103e7d9aefa8b03d571390f82
  */
 
-
 import org.apache.commons.lang3.tuple.Pair;
 
 import io.morefuelsmod.common.Defines;
@@ -16,10 +15,10 @@ import net.minecraftforge.common.ForgeConfigSpec.Builder;
 public class MFMConfig {
 
 	public static final Common COMMON;
-	public static final ForgeConfigSpec clientSpec;
+	public static final ForgeConfigSpec COMMON_SPEC;
 	static {
 		final Pair<Common, ForgeConfigSpec> specPair = new Builder().configure(Common::new);
-        clientSpec = specPair.getRight();
+        COMMON_SPEC = specPair.getRight();
         COMMON = specPair.getLeft();
 	}
 	
@@ -39,6 +38,7 @@ public class MFMConfig {
         public final BooleanValue enableLavaOreOverworldGeneration;
 
         public Common(Builder builder) {
+            builder.push("worldgen");
         	
             enableBituminousGeneration = builder
                     .comment("Enable Bituminous Coal Ore Generation: THIS IS CURRENTLY BROKEN, SORRY")
@@ -53,7 +53,10 @@ public class MFMConfig {
             enableLavaOreOverworldGeneration = builder
             		.comment("Enable Lava Ore Generation in the Overworld: THIS IS CURRENTLY BROKEN, SORRY")
             		.translation(Defines.MODID + ".config." + "enableLavaOreOverworldGeneration")
-            		.define("enableLavaOreOverworldGeneration", true);
-	}	
-}
+                    .define("enableLavaOreOverworldGeneration", true);
+
+
+            builder.pop();
+                }	
+        }
 }
