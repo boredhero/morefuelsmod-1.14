@@ -23,8 +23,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class MoreFuelsMod {
 
     public static final Logger LOGGER = LogManager.getLogger("GLOBAL");
-    public static final String version = "1.7.1";
-    public static final String mcversion = "1.14.4";
 
     public MoreFuelsMod() {
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MFMConfig.COMMON_SPEC);
@@ -39,10 +37,9 @@ public class MoreFuelsMod {
     }
     private void setup(final FMLCommonSetupEvent event)
     {
-        LOGGER.info("Loading morefuelsmod-" + mcversion + " v" + version);
+        LOGGER.info("MFM: Loading morefuelsmod 1.15.2-1.7.1");
         MFMConfig.bakeConfig();
-        LOGGER.info("MFMConfig: WE'RE FUCKIN BAKED");
-        MFMOreGen.fuckingFuckEverythingFUCK();
+        LOGGER.info("MFM: Configs are baked like its 4/20");
         LOGGER.info("MFM: Lets Load some F*****G ores");
         MFMOreGen.setupOreGenPart1();
         LOGGER.info("MFM: F*****G ores loaded");
@@ -61,7 +58,5 @@ public class MoreFuelsMod {
 
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) {
-        LOGGER.info("MFM: Server Instance Detected");
-        //MFMOreGen.setupOreGenPart1(); Had this here before, but it still didn't do anything useful.
     }
 }
