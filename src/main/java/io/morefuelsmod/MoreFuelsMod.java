@@ -3,7 +3,9 @@ package io.morefuelsmod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import io.morefuelsmod.common.Defines;
 import io.morefuelsmod.config.MFMConfig;
+import io.morefuelsmod.core.RegistryHandler;
 import io.morefuelsmod.fuels.MFMFuelsEventHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,20 +14,25 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
+import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod(MoreFuelsMod.modid)
+@Mod(Defines.MODID)
 public class MoreFuelsMod {
 
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String version = "1.7.1";
     public static final String mcversion = "1.14.4";
-    public static final String modid = "morefuelsmod";
 
     public MoreFuelsMod() {
-    	ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MFMConfig.clientSpec);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MFMConfig.clientSpec);
+        RegistryHandler.registerDeferred(FMLJavaModLoadingContext.get().getModEventBus());
+        MFMLogger.init(LogManager.getLogger());
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(MFMFuelsEventHandler.instance);
@@ -38,7 +45,16 @@ public class MoreFuelsMod {
         LOGGER.info("MFM: F*****G ores loaded");
     }
 
+    private void enqueueIMC(final InterModEnqueueEvent event){
+
+    }
+
+    private void processIMC(final InterModProcessEvent event){
+
+    }
+
     private void doClientStuff(final FMLClientSetupEvent event) {
+
     }
 
     @SubscribeEvent

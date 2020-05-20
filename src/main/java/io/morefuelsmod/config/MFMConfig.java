@@ -8,7 +8,7 @@ package io.morefuelsmod.config;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import io.morefuelsmod.MoreFuelsMod;
+import io.morefuelsmod.common.Defines;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.ForgeConfigSpec.BooleanValue;
 import net.minecraftforge.common.ForgeConfigSpec.Builder;
@@ -42,17 +42,17 @@ public class MFMConfig {
         	
             enableBituminousGeneration = builder
                     .comment("Enable Bituminous Coal Ore Generation: THIS IS CURRENTLY BROKEN, SORRY")
-                    .translation(MoreFuelsMod.modid + ".config." + "enableBituminousGeneration")
+                    .translation(Defines.MODID + ".config." + "enableBituminousGeneration")
                     .define("enableBituminousGeneration", true);
             
             enableLavaOreNetherGeneration = builder
                     .comment("Enable Lava Ore Genereation in the Nether: THIS IS CURRENTLY BROKEN, SORRY")
-                    .translation(MoreFuelsMod.modid + ".config." + "enableLaveOreNetherGeneration")
+                    .translation(Defines.MODID + ".config." + "enableLaveOreNetherGeneration")
                     .define("enableLavaOreNetherGeneration", true);
             
             enableLavaOreOverworldGeneration = builder
             		.comment("Enable Lava Ore Generation in the Overworld: THIS IS CURRENTLY BROKEN, SORRY")
-            		.translation(MoreFuelsMod.modid + ".config." + "enableLavaOreOverworldGeneration")
+            		.translation(Defines.MODID + ".config." + "enableLavaOreOverworldGeneration")
             		.define("enableLavaOreOverworldGeneration", true);
 	}	
 }

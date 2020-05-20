@@ -4,7 +4,8 @@ package io.morefuelsmod.fuels;
 import java.util.Arrays;
 import java.util.List;
 
-import io.morefuelsmod.init.MFMItems;
+import io.morefuelsmod.item.ModItems;
+import io.morefuelsmod.block.ModBlocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -108,25 +109,25 @@ public class MFMFuelsEventHandler {
 				lava_orb = 20000, can_of_slimoline = 20000, coal_dust = 1600,
 				infinite_creative_fuel = 63072000; /*Two years in real time!*/
 		
-		if(fuel == MFMItems.DRIED_PLANT)
+		if(fuel == ModItems.DRIED_PLANT.get())
 			event.setBurnTime(dried_plant);
-		else if(fuel == MFMItems.BLOCK_DRIED_PLANT)
+		else if(fuel == ModBlocks.BLOCK_DRIED_PLANT.get().asItem())
 			event.setBurnTime(dried_plant_block);
-		else if(fuel == MFMItems.BITUMINOUS_COAL)
+		else if(fuel == ModItems.BITUMINOUS_COAL.get())
 			event.setBurnTime(bituminous_coal);
-		else if(fuel == MFMItems.BLOCK_BITUMINOUS_COAL)
+		else if(fuel == ModBlocks.BLOCK_BITUMINOUS_COAL.get().asItem())
 			event.setBurnTime(bituminous_coal_block);
-		else if(fuel == MFMItems.COKE)
+		else if(fuel == ModItems.COKE.get())
 			event.setBurnTime(coke);
-		else if(fuel == MFMItems.BLOCK_COKE)
+		else if(fuel == ModBlocks.BLOCK_COKE.get().asItem())
 			event.setBurnTime(coke_block);
-		else if(fuel == MFMItems.LAVA_GLASS_ORB)
+		else if(fuel == ModItems.LAVA_GLASS_ORB.get())
 			event.setBurnTime(lava_orb);
-		else if(fuel == MFMItems.CAN_OF_SLIMOLINE)
+		else if(fuel == ModItems.CAN_OF_SLIMOLINE.get())
 			event.setBurnTime(can_of_slimoline);
-		else if(fuel == MFMItems.COAL_DUST)
+		else if(fuel == ModItems.COAL_DUST.get())
 			event.setBurnTime(coal_dust);
-		else if(fuel == MFMItems.BLOCK_CREATIVE_INFINITE_FUEL)
+		else if(fuel == ModBlocks.BLOCK_CREATIVE_INFINITE_FUEL.get().asItem())
 			event.setBurnTime(infinite_creative_fuel);
 		else if(planksList.contains(fuel))
 			event.setBurnTime(planks);

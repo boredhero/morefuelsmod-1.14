@@ -10,8 +10,8 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.registries.ForgeRegistries;
+import io.morefuelsmod.block.ModBlocks;
 import io.morefuelsmod.config.MFMConfig;
-import io.morefuelsmod.init.MFMBlocks;
 
 /*
  * Base class that I heavily *heavily* modified was based from here:
@@ -52,9 +52,9 @@ public class MFMOreGen {
     	//A boolean that you can check with your config, or just hard code send it a false to avoid that step
     	//A vein size integer
     	//A CountRangeConfig object with the Veins Per Chunk, MinHeight, MaxHeightBase (should be 0), and MaxHeight
-    	setupOreGenPart2(netherBiome, nether, MFMBlocks.BLOCK_LAVA_ORE, MFMConfig.enableLavaOreNetherGeneration, lavaOreVeinSize, lavaOreCfg);
-    	setupOreGenPart2(allOverworldBiomes, stone, MFMBlocks.BLOCK_BITUMINOUS_COAL_ORE, MFMConfig.enableBituminousGeneration, bituminousVeinSize, bituminousCfg);
-    	setupOreGenPart2(allOverworldBiomes, stone, MFMBlocks.BLOCK_LAVA_ORE, MFMConfig.enableLavaOreOverworldGeneration, lavaOreVeinSize, lavaOreOverworldCfg);
+    	setupOreGenPart2(netherBiome, nether, ModBlocks.BLOCK_LAVA_ORE.get(), MFMConfig.enableLavaOreNetherGeneration, lavaOreVeinSize, lavaOreCfg);
+    	setupOreGenPart2(allOverworldBiomes, stone, ModBlocks.BLOCK_BITUMINOUS_COAL_ORE.get(), MFMConfig.enableBituminousGeneration, bituminousVeinSize, bituminousCfg);
+    	setupOreGenPart2(allOverworldBiomes, stone, ModBlocks.BLOCK_LAVA_ORE.get(), MFMConfig.enableLavaOreOverworldGeneration, lavaOreVeinSize, lavaOreOverworldCfg);
     }
     
     //This baby does all the hard work.
