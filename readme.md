@@ -50,8 +50,8 @@ This is the active developemnt repo for MoreFuelsMod for Minecraft 1.14.4 and On
 #### Advanced:
 * jar filename is set to modid-minecraftversion-version.jar
 * You can change these variables in the file "build.gradle"
-	* version = 'version-number"
-		* Please use something like Semantic Versioning.
+	* version = 'minecraftversion-version"
+		* Please use something like Semantic Versioning for the "version" part of this!
 	* group = 'io.modid'
 		* The packaging format for forge mods must be this way.
 		* Your main class file should be your modid.
