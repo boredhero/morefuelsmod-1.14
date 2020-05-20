@@ -1,4 +1,4 @@
-package morefuelsmod.boredhero.morefuelsmod;
+package io.morefuelsmod;
 
 import org.apache.commons.lang3.ArrayUtils;
 import net.minecraft.block.Block;
@@ -10,8 +10,8 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.registries.ForgeRegistries;
-import morefuelsmod.boredhero.morefuelsmod.config.MFMConfig;
-import morefuelsmod.boredhero.morefuelsmod.init.MFMBlocks;
+import io.morefuelsmod.config.MFMConfig;
+import io.morefuelsmod.init.MFMBlocks;
 
 /*
  * Base class that I heavily *heavily* modified was based from here:

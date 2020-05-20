@@ -1,10 +1,10 @@
-package morefuelsmod.boredhero.morefuelsmod.init;
+package io.morefuelsmod.init;
 
 import java.util.function.Supplier;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import morefuelsmod.boredhero.morefuelsmod.*;
+import io.morefuelsmod.MoreFuelsMod;
 
 //Credit for this class goes to Cadiboo and his excellent tutorial.
 //https://cadiboo.github.io/tutorials/1.14.4/forge/1.7-itemgroup/

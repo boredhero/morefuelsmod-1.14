@@ -1,11 +1,10 @@
 //https://github.com/TheGreyGhost/MinecraftByExample/blob/master/src/main/java/minecraftbyexample/mbe35_recipes/FurnaceFuelBurnTimeEventHandler.java
-
-package morefuelsmod.boredhero.morefuelsmod.fuels;
+package io.morefuelsmod.fuels;
 
 import java.util.Arrays;
 import java.util.List;
 
-import morefuelsmod.boredhero.morefuelsmod.init.MFMItems;
+import io.morefuelsmod.init.MFMItems;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;

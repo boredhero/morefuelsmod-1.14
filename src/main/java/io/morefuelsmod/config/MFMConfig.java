@@ -1,4 +1,4 @@
-package morefuelsmod.boredhero.morefuelsmod.config;
+package io.morefuelsmod.config;
 
 /*
  * Credit to Cadiboo on the file
@@ -8,7 +8,7 @@ package morefuelsmod.boredhero.morefuelsmod.config;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod;
+import io.morefuelsmod.MoreFuelsMod;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.ForgeConfigSpec.BooleanValue;
 import net.minecraftforge.common.ForgeConfigSpec.Builder;

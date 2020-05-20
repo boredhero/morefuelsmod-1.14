@@ -1,4 +1,4 @@
-package morefuelsmod.boredhero.morefuelsmod;
+package io.morefuelsmod;
 //Credit for this lovely class goes to Cadiboo
 //https://github.com/Cadiboo/Example-Mod/blob/1.14.4/src/main/java/io/github/cadiboo/examplemod/ModEventSubscriber.java
 
@@ -16,8 +16,8 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
-import morefuelsmod.boredhero.morefuelsmod.config.MFMConfig;
-import morefuelsmod.boredhero.morefuelsmod.init.MFMItemGroups;
+import io.morefuelsmod.config.MFMConfig;
+import io.morefuelsmod.init.MFMItemGroups;
 
 @EventBusSubscriber(modid = MoreFuelsMod.modid, bus = EventBusSubscriber.Bus.MOD)
 public final class MFMEventSubscriber {

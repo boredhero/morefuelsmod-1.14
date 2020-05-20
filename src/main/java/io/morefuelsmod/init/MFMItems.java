@@ -1,6 +1,6 @@
-package morefuelsmod.boredhero.morefuelsmod.init;
+package io.morefuelsmod.init;
 
-import morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod;
+import io.morefuelsmod.MoreFuelsMod;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.ObjectHolder;
 

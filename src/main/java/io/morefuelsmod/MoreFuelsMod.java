@@ -1,10 +1,10 @@
-package morefuelsmod.boredhero.morefuelsmod;
+package io.morefuelsmod;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import morefuelsmod.boredhero.morefuelsmod.config.MFMConfig;
-import morefuelsmod.boredhero.morefuelsmod.fuels.MFMFuelsEventHandler;
+import io.morefuelsmod.config.MFMConfig;
+import io.morefuelsmod.fuels.MFMFuelsEventHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;

@@ -1,9 +1,9 @@
-package morefuelsmod.boredhero.morefuelsmod.init;
+package io.morefuelsmod.init;
 
 import net.minecraft.block.Block;
 import net.minecraftforge.registries.ObjectHolder;
 
-import morefuelsmod.boredhero.morefuelsmod.MoreFuelsMod;
+import io.morefuelsmod.MoreFuelsMod;
 
 //The purpose of this class is to allow us to reference our blocks before they are actually created.
 //They are set to MFMUtils._null(); rather than regular null because this helps prevent NullPointerException errors
