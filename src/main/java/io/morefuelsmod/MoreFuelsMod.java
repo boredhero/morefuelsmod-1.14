@@ -7,6 +7,8 @@ import io.morefuelsmod.common.Defines;
 import io.morefuelsmod.config.MFMConfig;
 import io.morefuelsmod.core.RegistryHandler;
 import io.morefuelsmod.fuels.MFMFuelsEventHandler;
+import io.morefuelsmod.worldgen.MFMOreGen;
+
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;

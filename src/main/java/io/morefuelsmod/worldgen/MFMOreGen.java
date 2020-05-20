@@ -1,4 +1,4 @@
-package io.morefuelsmod;
+package io.morefuelsmod.worldgen;
 
 import org.apache.commons.lang3.ArrayUtils;
 import net.minecraft.block.Block;
