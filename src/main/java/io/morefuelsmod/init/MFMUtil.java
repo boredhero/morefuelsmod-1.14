@@ -1,4 +1,4 @@
-package morefuelsmod.boredhero.morefuelsmod.init;
+package io.morefuelsmod.init;
 
 import javax.annotation.Nonnull;
 
