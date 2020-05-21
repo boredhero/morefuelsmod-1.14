@@ -70,10 +70,14 @@ public class MFMOreGen {
 		if(configSwitch == true){
     		for(Biome biome : ForgeRegistries.BIOMES.getValues()) {
     		//Use ArrayUtils to see if our Category[] wantedBiomes contains the current biome in the loop, and if so, generate the ore.
-    			if(ArrayUtils.contains(wantedBiomes, biome.getCategory())) {
+    			if(ArrayUtils.contains(wantedBiomes, biome.getCategory()))
+    			{
     				//This is how we actually add the ore generation to the biome(s)
-    					biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize), Placement.COUNT_RANGE, cfg));
-    					MoreFuelsMod.LOGGER.info("MFM: Added an ore: " + wantedBlock + " to biome: " + biome.getCategory());	
+    				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+							new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize))
+							.withPlacement(Placement.COUNT_RANGE.configure(cfg)));
+
+					MoreFuelsMod.LOGGER.info("MFM: Added an ore: " + wantedBlock + " to biome: " + biome.getCategory());
     			}
     		}
     	} 
@@ -91,9 +95,12 @@ public class MFMOreGen {
     if(configSwitch == true) {
     	for(Biome biome : ForgeRegistries.BIOMES.getValues()) {
     		//For any biome that ISN'T the end of the nether, we're going to execute our oregen code
-    		if(!(biome.getCategory() == Biome.Category.THEEND || biome.getCategory() == Biome.Category.NETHER)) {
-    			//This is how we actually add the ore generation to the biome(s)
-    			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize), Placement.COUNT_RANGE, cfg));		
+    		if(!(biome.getCategory() == Biome.Category.THEEND || biome.getCategory() == Biome.Category.NETHER))
+    		{
+				//This is how we actually add the ore generation to the biome(s)
+				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+						new OreFeatureConfig(stoneType, wantedBlock.getDefaultState(), veinSize))
+						.withPlacement(Placement.COUNT_RANGE.configure(cfg)));
 			}
 		}
 		MoreFuelsMod.LOGGER.info("MFM: Added an ore: " + wantedBlock + " to all Overworld biomes");
