@@ -76,8 +76,9 @@
 * Enchanted Books (All) --> 21s/420 ticks 
 * Armor Stand --> 11.25s/225 ticks
 * Shield --> 22.5s/450 ticks
-* Banner Pattern (All) --> 7s/140s
+* Banner Pattern (All) --> 7s/140 ticks
 * Campfire --> 130.65s/2613 ticks
+* Bee Hive --> 22.5s/450 tics
 
 ---
 
