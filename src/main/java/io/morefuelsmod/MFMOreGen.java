@@ -1,6 +1,7 @@
 package io.morefuelsmod;
 
 import org.apache.commons.lang3.ArrayUtils;
+
 import net.minecraft.block.Block;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biome.Category;
@@ -10,6 +11,7 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.registries.ForgeRegistries;
+
 import io.morefuelsmod.block.ModBlocks;
 import io.morefuelsmod.config.MFMConfig;
 

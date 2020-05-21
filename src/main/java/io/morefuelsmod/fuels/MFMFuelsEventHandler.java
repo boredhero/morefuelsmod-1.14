@@ -4,14 +4,15 @@ package io.morefuelsmod.fuels;
 import java.util.Arrays;
 import java.util.List;
 
-import io.morefuelsmod.item.ModItems;
-import io.morefuelsmod.block.ModBlocks;
-import io.morefuelsmod.config.MFMConfig;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import io.morefuelsmod.item.ModItems;
+import io.morefuelsmod.block.ModBlocks;
+import io.morefuelsmod.config.MFMConfig;
 
 public class MFMFuelsEventHandler {
 	public static final MFMFuelsEventHandler instance = new MFMFuelsEventHandler();

@@ -3,10 +3,6 @@ package io.morefuelsmod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import io.morefuelsmod.common.Defines;
-import io.morefuelsmod.config.MFMConfig;
-import io.morefuelsmod.core.RegistryHandler;
-import io.morefuelsmod.fuels.MFMFuelsEventHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -18,6 +14,11 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+
+import io.morefuelsmod.common.Defines;
+import io.morefuelsmod.config.MFMConfig;
+import io.morefuelsmod.core.RegistryHandler;
+import io.morefuelsmod.fuels.MFMFuelsEventHandler;
 
 @Mod(Defines.MODID)
 public class MoreFuelsMod {

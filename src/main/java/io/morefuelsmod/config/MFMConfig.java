@@ -7,11 +7,12 @@ package io.morefuelsmod.config;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import io.morefuelsmod.common.Defines;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.ForgeConfigSpec.BooleanValue;
 import net.minecraftforge.common.ForgeConfigSpec.Builder;
 import net.minecraftforge.common.ForgeConfigSpec.ConfigValue;
+
+import io.morefuelsmod.common.Defines;
 
 public class MFMConfig {
 

@@ -2,10 +2,11 @@ package io.morefuelsmod.item;
 
 import java.util.function.Supplier;
 
-import io.morefuelsmod.common.Defines;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+
+import io.morefuelsmod.common.Defines;
 
 /**
  * ModItemGroup is an ItemGroup (previously called {@code CreativeTab} child for our mod

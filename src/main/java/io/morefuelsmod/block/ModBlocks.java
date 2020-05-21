@@ -1,5 +1,8 @@
 package io.morefuelsmod.block;
 
+import java.util.Set;
+import java.util.function.Supplier;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -7,9 +10,6 @@ import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-
-import java.util.Set;
-import java.util.function.Supplier;
 
 import io.morefuelsmod.common.Defines;
 
