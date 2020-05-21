@@ -78,7 +78,7 @@
 * Shield --> 22.5s/450 ticks
 * Banner Pattern (All) --> 7s/140 ticks
 * Campfire --> 130.65s/2613 ticks
-* Bee Hive --> 22.5s/450 tics
+* Bee Hive --> 22.5s/450 ticks
 
 ---
 

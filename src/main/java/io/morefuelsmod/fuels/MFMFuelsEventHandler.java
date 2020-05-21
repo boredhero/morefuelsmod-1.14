@@ -101,7 +101,7 @@ public class MFMFuelsEventHandler {
 		purpur_stairs = MFMConfig.purpur_stairs, end_rod = MFMConfig.end_rod, lever = MFMConfig.lever, mushroom_block = MFMConfig.mushroom_block, string = MFMConfig.string, 
 		feather = MFMConfig.feather, painting = MFMConfig.painting, paper = MFMConfig.paper, books = MFMConfig.books, minecart_with_chest = MFMConfig.minecart_with_chest, bed = MFMConfig.bed,
 		dried_kelp = MFMConfig.dried_kelp, blaze_powder = MFMConfig.dried_kelp, item_frame = MFMConfig.item_frame, map = MFMConfig.map, carrot_on_a_stick = MFMConfig.carrot_on_a_stick,
-		armor_stand = MFMConfig.armor_stand, shield = MFMConfig.shield, banner_pattern = MFMConfig.banner_pattern, campfire = MFMConfig.campfire,
+		armor_stand = MFMConfig.armor_stand, shield = MFMConfig.shield, banner_pattern = MFMConfig.banner_pattern, campfire = MFMConfig.campfire, beehive = MFMConfig.beehive,
 		//And lastly...modded fuel items...
 		dried_plant = MFMConfig.dried_plant, dried_plant_block = MFMConfig.dried_plant_block, bituminous_coal = MFMConfig.bituminous_coal, bituminous_coal_block = MFMConfig.bituminous_coal_block,
 		coke = MFMConfig.coke, coke_block = MFMConfig.coke_block, lava_orb = MFMConfig.lava_orb, can_of_slimoline = MFMConfig.can_of_slimoline, coal_dust = MFMConfig.coal_dust,
@@ -255,6 +255,8 @@ public class MFMFuelsEventHandler {
 			event.setBurnTime(banner);
 		else if(carpetList.contains(fuel) && MFMConfig.enableCarpetTweak)
 			event.setBurnTime(carpet);
+		else if(fuel == Items.BEEHIVE && MFMConfig.enableBeeHiveFuel)
+			event.setBurnTime(beehive);
 		
 	}
 	

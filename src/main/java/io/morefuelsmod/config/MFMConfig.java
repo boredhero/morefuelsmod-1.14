@@ -38,7 +38,7 @@ public class MFMConfig {
         enableArmorStandFuel, enableShieldFuel, enableCampfireFuel, enableItemFrameFuel, enableChestMinecartFuel, enableDriedKelpItemFuel, 
         enableDaylightDetectorFuel, enableLeverFuel, enableCarrotOnAStickFuel, enableTripwireHookFuel, enableSpongeFuel, enableCobwebFuel, enableTorchFuel, 
         enableRedstoneTorchFuel, enablePurpurBlocksFuel, enablePurpurSlabFuel, enablePurpurStairsFuel, enableEndRodFuel, enableBlazePowderFuel, enableChorusItemsFuel, 
-        enablePistonFuels, enableBannerPatternFuels, enableMapsFuels;
+        enablePistonFuels, enableBannerPatternFuels, enableMapsFuels, enableBeeHiveFuel;
 
         //Lets let them change the numbers....why not...
         public static int planks, slabs, sticks, bowl, wood_door, boat, scaffolding, wood_fence, wood_stairs, wood_trapdoor,
@@ -48,7 +48,7 @@ public class MFMConfig {
         //Now lets get onto adding new items as fuel
         leaves, tripwire_hook, dry_sponge, piston, cobweb, torch, redstone_torch, chorus, purpur_block_pillar, purpur_slab, purpur_stairs, end_rod, lever,
         mushroom_block, string, feather, painting, paper, books, minecart_with_chest, bed, dried_kelp, blaze_powder, item_frame, map, carrot_on_a_stick,
-        armor_stand, shield, banner_pattern, campfire,
+        armor_stand, shield, banner_pattern, campfire, beehive,
         //And lastly...modded fuel items...
         dried_plant, dried_plant_block, bituminous_coal, bituminous_coal_block, coke, coke_block, lava_orb, can_of_slimoline, coal_dust,
         infinite_creative_fuel;
@@ -82,6 +82,7 @@ public class MFMConfig {
                 enablePurpurBlocksFuel = COMMON.enablePurpurBlocksFuel.get(); enablePurpurSlabFuel = COMMON.enablePurpurSlabFuel.get(); enablePurpurStairsFuel = COMMON.enablePurpurStairsFuel.get();
                 enableEndRodFuel = COMMON.enableEndRodFuel.get(); enableBlazePowderFuel = COMMON.enableBlazePowderFuel.get(); enableChorusItemsFuel = COMMON.enableChorusItemsFuel.get();
                 enablePistonFuels = COMMON.enablePistonFuels.get(); enableBannerPatternFuels = COMMON.enableBannerPatternFuels.get(); enableMapsFuels = COMMON.enableMapsFuels.get();
+                enableBeeHiveFuel = COMMON.enableBeeHiveFuel.get();
                 //Values...oh god
                 planks = COMMON.planks.get(); slabs = COMMON.slabs.get(); sticks = COMMON.sticks.get(); bowl = COMMON.bowl.get(); wood_door = COMMON.wood_door.get();
                 boat = COMMON.boat.get(); scaffolding = COMMON.scaffolding.get(); wood_fence = COMMON.wood_fence.get(); wood_stairs = COMMON.wood_stairs.get();
@@ -99,6 +100,7 @@ public class MFMConfig {
                 books = COMMON.books.get(); minecart_with_chest = COMMON.minecart_with_chest.get(); bed = COMMON.bed.get(); dried_kelp = COMMON.dried_kelp.get();
                 blaze_powder = COMMON.blaze_powder.get(); item_frame = COMMON.item_frame.get(); map = COMMON.map.get(); carrot_on_a_stick = COMMON.carrot_on_a_stick.get();
                 armor_stand = COMMON.armor_stand.get(); shield = COMMON.shield.get(); banner_pattern = COMMON.banner_pattern.get(); campfire = COMMON.campfire.get();
+                beehive = COMMON.beehive.get();
                 //Our stuff
                 dried_plant = COMMON.dried_plant.get(); dried_plant_block = COMMON.dried_plant_block.get(); bituminous_coal = COMMON.bituminous_coal.get(); 
                 bituminous_coal_block = COMMON.bituminous_coal_block.get(); coke = COMMON.coke.get(); coke_block = COMMON.coke_block.get(); lava_orb = COMMON.lava_orb.get();
@@ -122,7 +124,7 @@ public class MFMConfig {
         enableArmorStandFuel, enableShieldFuel, enableCampfireFuel, enableItemFrameFuel, enableChestMinecartFuel, enableDriedKelpItemFuel, 
         enableDaylightDetectorFuel, enableLeverFuel, enableCarrotOnAStickFuel, enableTripwireHookFuel, enableSpongeFuel, enableCobwebFuel, enableTorchFuel, 
         enableRedstoneTorchFuel, enablePurpurBlocksFuel, enablePurpurSlabFuel, enablePurpurStairsFuel, enableEndRodFuel, enableBlazePowderFuel, enableChorusItemsFuel, 
-        enablePistonFuels, enableBannerPatternFuels, enableMapsFuels;
+        enablePistonFuels, enableBannerPatternFuels, enableMapsFuels, enableBeeHiveFuel;
 
         //Lets let them change the numbers....why not...
         public final ConfigValue<Integer> planks, slabs, sticks, bowl, wood_door, boat, scaffolding, wood_fence, wood_stairs, wood_trapdoor,
@@ -132,7 +134,7 @@ public class MFMConfig {
         //Now lets get onto adding new items as fuel
         leaves, tripwire_hook, dry_sponge, piston, cobweb, torch, redstone_torch, chorus, purpur_block_pillar, purpur_slab, purpur_stairs, end_rod, lever,
         mushroom_block, string, feather, painting, paper, books, minecart_with_chest, bed, dried_kelp, blaze_powder, item_frame, map, carrot_on_a_stick,
-        armor_stand, shield, banner_pattern, campfire,
+        armor_stand, shield, banner_pattern, campfire, beehive,
         //And lastly...modded fuel items...
         dried_plant, dried_plant_block, bituminous_coal, bituminous_coal_block, coke, coke_block, lava_orb, can_of_slimoline, coal_dust,
         infinite_creative_fuel;
@@ -222,6 +224,7 @@ public class MFMConfig {
                 enablePistonFuels = builder.comment("").translation(Defines.MODID + ".config." + "enablePistonFuels").define("enablePistonFuels", true);
                 enableBannerPatternFuels = builder.comment("").translation(Defines.MODID + ".config." + "enableBannerPatternFuels").define("enableBannerPatternFuels", true);
                 enableMapsFuels = builder.comment("").translation(Defines.MODID + ".config." + "enableMapsFuels").define("enableMapsFuels", true);
+                enableBeeHiveFuel = builder.comment("").translation(Defines.MODID + ".config." + "enableBeeHiveFuel").define("enableBeeHiveFuel", true);
 
 
                 planks = builder.comment("\nValues - These are in ticks. Don't touch unless you need advanced tuning!").translation(Defines.MODID + ".config." + "planks").define("planks", 75);
@@ -289,6 +292,8 @@ public class MFMConfig {
                 shield = builder.comment("").translation(Defines.MODID + ".config." + "shield").define("shield", 450);
                 banner_pattern = builder.comment("").translation(Defines.MODID + ".config." + "banner_pattern").define("banner_pattern", 140);
                 campfire = builder.comment("").translation(Defines.MODID + ".config." + "campfire").define("campfire", 2613);
+                beehive = builder.comment("").translation(Defines.MODID + ".config." + "beehive").define("beehive", 450);
+                //Mod fuels start here
                 dried_plant = builder.comment("").translation(Defines.MODID + ".config." + "dried_plant").define("dried_plant", 140);
                 dried_plant_block = builder.comment("").translation(Defines.MODID + ".config." + "dried_plant_block").define("dried_plant_block", 1260);
                 bituminous_coal = builder.comment("").translation(Defines.MODID + ".config." + "bituminous_coal").define("bituminous_coal", 1600);
