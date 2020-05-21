@@ -26,7 +26,6 @@ public class MFMOreGen {
 	//Space savers when calling setupOreGenPart2();
 	private static final OreFeatureConfig.FillerBlockType stone = OreFeatureConfig.FillerBlockType.NATURAL_STONE;
 	private static final OreFeatureConfig.FillerBlockType nether = OreFeatureConfig.FillerBlockType.NETHERRACK;
-    
     //These are vein sizes
     //Ex: private static final int blockNameVeinSize = a positive integer for the number of blocks in the vein
     private static final int bituminousVeinSize = 5;
