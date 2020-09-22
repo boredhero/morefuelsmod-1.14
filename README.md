@@ -2,6 +2,8 @@
 # morefuelsmod
 This is the active developemnt repo for MoreFuelsMod for Minecraft 1.12.2 and Onwards
 
+## branch - 1.12.x
+
 ### Author
 * Noah Martino (personal.boredhero@gmail.com)
 
