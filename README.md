@@ -1,6 +1,7 @@
-![mf-logo](https://raw.githubusercontent.com/boredhero/morefuelsmod-1.14/master/src/main/resources/mf-logo.png)
+![mf-logo](https://raw.githubusercontent.com/boredhero/morefuelsmod/1.15.2/src/main/resources/mf-logo.png)
 # morefuelsmod
-This is the active developemnt repo for MoreFuelsMod for Minecraft 1.14.4 and Onwards
+## branch - 1.15.2
+This is the active developemnt repo for MoreFuelsMod for Minecraft 1.12.2 and Onwards
 
 ### Author
 * Noah Martino (personal.boredhero@gmail.com)
@@ -13,29 +14,32 @@ This is the active developemnt repo for MoreFuelsMod for Minecraft 1.14.4 and On
 #### Dependencies:
 * Eclipse for Java Developers
 * JDK 8 (preferred), 9, or 10+
-	* Linux users of the world, yes, OpenJDK is just fine. 
+	* Linux users of the world, yes, OpenJDK is just fine.
+    * **Special Note:** 1.12.x and below versions will most likely only work with Java 8!
 * git command line tools (preferred) OR GUI git client
 
+
 #### Steps:
+* If using Windows, use your Git Bash app to do the git commands! You can also do this via the Git GUI Client!
 * run command: ```git clone https://github.com/boredhero/morefuelsmod```
 * ```cd``` into morefuelsmod folder
 * ```git checkout {branchNameHere}```
-	* We have two branches: ```1.14.4``` and ```1.15.2```
-* run ```chmod +x gradlew1``` if using Linux or Mac
+	* We have four branches: ```1.15.2```, ```1.14.4```, ```1.13.2```, and ```1.12.x```
+* run ```chmod +x gradlew``` if using Linux or Mac
+
+#### VSCode/Code-OSS
+* run command: ```gradlew genVSCodeRuns``` (Windows) or ```./gradlew genVSCodeRuns``` (Linux/Mac)
+* Open as folder in VSCode/Code-OSS
 
 #### Eclipse
-* run command: ```gradlew eclipse``` or ```./gradlew eclipse``` (Linux/Mac)
-* run command: ```gradlew genEclipseRuns``` or ```./gradlew genEclipseRuns``` (Linux/Mac)
+* run command: ```gradlew eclipse``` (Windows) or ```./gradlew eclipse``` (Linux/Mac)
+* run command: ```gradlew genEclipseRuns``` (Windows) or ```./gradlew genEclipseRuns``` (Linux/Mac)
 * Open Eclipse, File > Import > Existing Project > Select Folder > Import
 
 #### IntelliJ IDEA
-* run command: ```gradlew idea``` or ```./gradlew idea``` (Linux/Mac)
-* run command: ```gradlew genIntellijRuns``` or ```./gradlew genIntellijRuns```
+* run command: ```gradlew idea``` (Windows) or ```./gradlew idea``` (Linux/Mac)
+* run command: ```gradlew genIntellijRuns``` (Windows) or ```./gradlew genIntellijRuns```
 * Import to IntelliJ IDEA
-
-#### VSCode
-* run command: ```gradlew genVSCodeRuns``` or ```./gradlew genVSCodeRuns``` (Linux/Mac)
-* Open as folder in VSCode
 
 #### Further Notes:
 * You can configure the amount of RAM used for script operations/build operations in gradle.properties. Default for this repo is 5 GB but adjust accordingly.
@@ -44,7 +48,7 @@ This is the active developemnt repo for MoreFuelsMod for Minecraft 1.14.4 and On
 
 #### Basic Instructions:
 * ```cd``` into morefuelsmod directory
-* run command: ```gradlew build``` or ```./gradlew build``` (Linux/Mac)
+* run command: ```gradlew build``` (Windows) or ```./gradlew build``` (Linux/Mac)
 * jar file will be in /morefuelsmod/build/libs/
 
 #### Advanced:
