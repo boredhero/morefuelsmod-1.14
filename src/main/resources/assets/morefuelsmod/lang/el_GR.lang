@@ -1,0 +1,25 @@
+#All Greek Translation Done With Google Translate! If there are errors, email me at treeclan12@gmail.com to correct them or commit to github repo
+
+#Mod Creative Tab
+itemGroup.morefuelsmod=Περισσότερα καύσιμα (Perissótera káfsima)
+
+#Items
+item.coke.name=Κοκ
+item.bituminous_coal.name=Ασφαλτός άνθρακας (Asfaltós ánthrakas)
+item.can_of_slimoline.name=Μπορεί να Slim-o-line (Boreí na Slimoline)
+item.coal_dust.name=Ανθρακοσκόνη (Anthrakoskóni)
+item.compressed_pellet_fuel.name=Συμπιεσμένο καύσιμο πελετών (Sympiesméno káfsimo peletón)
+item.glass_orb.name=Γυμνάσιο γυμνό (Gymnásio gymnó)
+item.tempered_glass_orb.name=Σκουλαρίκι από σκληρό γυαλί (Skoularíki apó skliró gyalí)
+item.lava_glass_orb.name=Λάβα Σφαίρα (Láva Sfaíra)
+item.pellet_fuel.name=Πετρέλαιο καυσίμου (Petrélaio kafsímou)
+item.lava_crystals.name=Κρύσταλλοι λάβα (Krýstalloi láva)
+
+#Blocks
+tile.ore_bituminous_coal.name=Ασφαλτόχρωμα ορυκτά (Asfaltóchroma oryktá)
+tile.block_coke.name=Αποκλεισμός οπτάνθρακα (Apokleismós optánthraka)
+tile.block_bituminous_coal.name=Ασφαλτό στρώμα άνθρακα (Asfaltó stróma ánthraka)
+tile.block_creative_infinite_fuel.name=Μόνο δημιουργικό άπειρο καύσιμο (Móno dimiourgikó ápeiro káfsimo)
+tile.ore_lava.name=Λάβα Ορέ (Láva Oré)
+tile.block_pellet_fuel.name=Δοχείο καυσίμου πελετών (Docheío kafsímou peletón)
+tile.block_compressed_pellet_fuel.name=Συμπιεσμένο μπλοκ καυσίμου πελετών (Sympiesméno blok kafsímou peletón)

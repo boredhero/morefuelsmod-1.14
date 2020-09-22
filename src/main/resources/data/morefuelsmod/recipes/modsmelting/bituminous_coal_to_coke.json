@@ -1,9 +1,0 @@
-{
-    "type": "smelting",
-    "ingredient": {
-        "item": "morefuelsmod:bituminous_coal"
-    },
-    "result": "morefuelsmod:coke",
-    "experience": 0.5,
-    "cookingtime": 50
-}

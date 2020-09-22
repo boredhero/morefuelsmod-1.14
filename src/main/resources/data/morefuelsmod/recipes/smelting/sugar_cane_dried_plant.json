@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "minecraft:sugar_cane"
-  },
-  "result": "morefuelsmod:dried_plant",
-  "experience": 0.15,
-  "cookingtime": 20
-}

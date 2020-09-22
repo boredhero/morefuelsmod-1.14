@@ -1,0 +1,25 @@
+#All German Translation Done With Google Translate! If there are errors, email me at treeclan12@gmail.com to correct them or commit to github repo
+
+#Mod Creative Tab
+itemGroup.morefuelsmod=Mehr Brennstoffe
+
+#Items
+item.coke.name=Coke
+item.bituminous_coal.name=Steinkohle
+item.can_of_slimoline.name=Dose Slim-o-line
+item.coal_dust.name=Kohlenstaub
+item.compressed_pellet_fuel.name=Komprimierter Pellet-Kraftstoff
+item.glass_orb.name=Leere Glaskugel (Ungehärtet)
+item.tempered_glass_orb.name=Leere Glaskugel (Temperiert)
+item.lava_glass_orb.name=Gefüllte Glaskugel (Lava)
+item.pellet_fuel.name=Pellet-Treibstoff
+item.lava_crystals.name=Lavakristalle
+
+#Blocks
+tile.ore_bituminous_coal.name=Steinkohlenerz
+tile.block_coke.name=Koks-Block
+tile.block_bituminous_coal.name=Steinkohle Block
+tile.block_creative_infinite_fuel.name=Unendlich Kraftstoff (nur Kreativ)
+tile.ore_lava.name=Lavaerz
+tile.block_pellet_fuel.name=Pellet-Brennstoffblock
+tile.block_compressed_pellet_fuel.name=Komprimierter Pellet-Brennstoffblock

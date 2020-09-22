@@ -1,0 +1,25 @@
+#All Italian Translation Done With Google Translate! If there are errors, email me at treeclan12@gmail.com to correct them or commit to github repo
+
+#Mod Creative Tab
+itemGroup.morefuelsmod=Più carburanti
+
+#Items
+item.coke.name=il carbone
+item.bituminous_coal.name=Carbone bituminoso
+item.can_of_slimoline.name=Lattina di Slim-o-line
+item.coal_dust.name=Polvere di carbone
+item.compressed_pellet_fuel.name=Combustibile a pellet compresso
+item.glass_orb.name=Globo di vetro vuoto
+item.tempered_glass_orb.name=Orbita di vetro vuoto temperato
+item.lava_glass_orb.name=Sfera di Lava
+item.pellet_fuel.name=Combustibile per pellet
+item.lava_crystals.name=Cristalli di lava
+
+#Blocks
+tile.ore_bituminous_coal.name=Minerale di carbone bituminoso
+tile.block_coke.name=Blocco di carbone
+tile.block_bituminous_coal.name=Carbone bituminoso blocco
+tile.block_creative_infinite_fuel.name=Carburante infinito (solo creatività)
+tile.ore_lava.name=Minerale di lava
+tile.block_pellet_fuel.name=Blocco di combustibile a pellet
+tile.block_compressed_pellet_fuel.name=Blocco di combustibile a pellet compresso

@@ -1,0 +1,25 @@
+#All Chinese (Simplified) Translation Done With Google Translate! If there are errors, email me at treeclan12@gmail.com to correct them or commit to github repo
+
+#Mod Creative Tab
+itemGroup.morefuelsmod=更多燃料 (Gèng duō ránliào)
+
+#Items
+item.coke.name=可乐 (Kělè)
+item.bituminous_coal.name=烟煤 (Yānméi)
+item.can_of_slimoline.name=可以 Slim-o-line (Nénggòu slimoline)
+item.coal_dust.name=煤炭粉末 (Méitàn fěnmò)
+item.compressed_pellet_fuel.name=压缩颗粒燃料 (Yāsuō kēlì ránliào)
+item.glass_orb.name=空的玻璃球 (Kōng de bōlí qiú)
+item.tempered_glass_orb.name=空玻璃球（钢化） (Kōng bōlí qiú (gānghuà))
+item.lava_glass_orb.name=填充玻璃球（熔岩） (Tiánchōng bōlí qiú (róngyán))
+item.pellet_fuel.name=颗粒燃料 (Kēlì ránliào)
+item.lava_crystals.name=熔岩晶体 (Róngyán jīngtǐ)
+
+#Blocks
+tile.ore_bituminous_coal.name=烟煤矿 (Yān méikuàng)
+tile.block_coke.name=可乐块 (Kělè kuài)
+tile.block_bituminous_coal.name=烟煤块 (Yānméi kuài)
+tile.block_creative_infinite_fuel.name=无限燃料（仅限创意） (Wúxiàn ránliào (jǐn xiàn chuàngyì))
+tile.ore_lava.name=熔岩矿石 (Róngyán kuàngshí)
+tile.block_pellet_fuel.name=颗粒燃料块 (Kēlì ránliào kuài)
+tile.block_compressed_pellet_fuel.name=压缩颗粒燃料块 (Yāsuō kēlì ránliào kuài)
