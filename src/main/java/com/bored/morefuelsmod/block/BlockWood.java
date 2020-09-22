@@ -1,8 +1,6 @@
 package com.bored.morefuelsmod.block;
 
 import com.bored.morefuelsmod.MoreFuelsMod;
-import com.bored.morefuelsmod.item.ModItems;
-
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 

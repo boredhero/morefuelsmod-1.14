@@ -1,14 +1,9 @@
 package com.bored.morefuelsmod.block;
 
-import java.util.Random;
-
 import com.bored.morefuelsmod.MoreFuelsMod;
-import com.bored.morefuelsmod.item.ModItems;
 
 import net.minecraft.block.Block;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBlocks {
