@@ -25,7 +25,7 @@ public class BlockOre extends BlockBase {
 		return this;
 	}
 	public Item getItemDropped(IBlockState state, Random rand, int fortune){
-		return ModItems.coke;
+		return ModItems.bituminousCoal;
 }
 
 }
