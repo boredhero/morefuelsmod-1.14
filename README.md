@@ -1,6 +1,6 @@
 ![mf-logo](https://raw.githubusercontent.com/boredhero/morefuelsmod/1.15.2/src/main/resources/mf-logo.png)
 # morefuelsmod
-## branch - 1.12.x
+## branch - 1.13.2
 This is the active developemnt repo for MoreFuelsMod for Minecraft 1.12.2 and Onwards
 
 ### Author
