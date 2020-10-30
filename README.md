@@ -24,7 +24,7 @@ This is the active developemnt repo for MoreFuelsMod for Minecraft 1.12.2 and On
 * run command: ```git clone https://github.com/boredhero/morefuelsmod```
 * ```cd``` into morefuelsmod folder
 * ```git checkout {branchNameHere}```
-	* We have four branches: ```1.15.2```, ```1.14.4```, ```1.13.2```, and ```1.12.x```
+	* We have five branches: ```1.16.3```, ```1.15.2```, ```1.14.4```, ```1.13.2```, and ```1.12.x```
 * run ```chmod +x gradlew``` if using Linux or Mac
 
 #### VSCode/Code-OSS
